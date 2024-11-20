@@ -1,0 +1,123 @@
+{
+    "quizzes": [
+      {
+        "quizId": 1,
+        "courseName": "Introduction to AI",
+        "topic": "Neural Networks",
+        "subtopic": "Basics",
+        "difficulty": "Medium",
+        "questions": [
+          {
+            "questionId": 101,
+            "questionText": "What is the purpose of a neural network?",
+            "options": [
+              "To store data",
+              "To process images",
+              "To model complex patterns",
+              "To write programs"
+            ],
+            "correctAnswer": "To model complex patterns"
+          },
+          {
+            "questionId": 102,
+            "questionText": "What does 'learning rate' refer to in machine learning?",
+            "options": [
+              "The speed of the computer",
+              "The rate at which the model learns",
+              "The size of the data",
+              "The number of layers in a neural network"
+            ],
+            "correctAnswer": "The rate at which the model learns"
+          }
+        ],
+        "generatedAt": "2024-11-19T10:15:30Z"
+      },
+      {
+        "quizId": 2,
+        "courseName": "Data Structures",
+        "topic": "Sorting Algorithms",
+        "subtopic": "Quick Sort",
+        "difficulty": "Hard",
+        "questions": [
+          {
+            "questionId": 201,
+            "questionText": "What is the average time complexity of Quick Sort?",
+            "options": [
+              "O(n)",
+              "O(n log n)",
+              "O(n^2)",
+              "O(log n)"
+            ],
+            "correctAnswer": "O(n log n)"
+          }
+        ],
+        "generatedAt": "2024-11-19T10:25:30Z"
+      },
+      {
+        "quizId": 3,
+        "courseName": "Web Development",
+        "topic": "JavaScript",
+        "subtopic": "ES6 Features",
+        "difficulty": "Easy",
+        "questions": [
+          {
+            "questionId": 301,
+            "questionText": "What is the purpose of the 'let' keyword in JavaScript?",
+            "options": [
+              "To define a function",
+              "To declare a block-scoped variable",
+              "To define a constant",
+              "To create an object"
+            ],
+            "correctAnswer": "To declare a block-scoped variable"
+          }
+        ],
+        "generatedAt": "2024-11-19T10:30:30Z"
+      },
+      {
+        "quizId": 4,
+        "courseName": "Operating Systems",
+        "topic": "Processes",
+        "subtopic": "Scheduling",
+        "difficulty": "Medium",
+        "questions": [
+          {
+            "questionId": 401,
+            "questionText": "Which scheduling algorithm is best for minimizing turnaround time?",
+            "options": [
+              "First Come First Serve",
+              "Shortest Job Next",
+              "Round Robin",
+              "Priority Scheduling"
+            ],
+            "correctAnswer": "Shortest Job Next"
+          }
+          
+        ],
+        "generatedAt": "2024-11-19T10:35:30Z"
+      },
+      {
+        "quizId": 5,
+        "courseName": "Database Systems",
+        "topic": "SQL",
+        "subtopic": "Joins",
+        "difficulty": "Medium",
+        "questions": [
+          {
+            "questionId": 501,
+            "questionText": "Which SQL clause is used to combine rows from two or more tables?",
+            "options": [
+              "WHERE",
+              "JOIN",
+              "GROUP BY",
+              "ORDER BY"
+            ],
+            "correctAnswer": "JOIN"
+          }
+          
+        ],
+        "generatedAt": "2024-11-19T10:40:30Z"
+      }
+    ]
+  }
+  
