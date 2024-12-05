@@ -1,0 +1,728 @@
+[
+  {
+    "quizId": 140,
+    "courseName": "CSET 1100",
+    "topic": "Lecture Content",
+    "subtopic": "Lecture 3: Data Structures and Algorithms",
+    "difficulty": "Easy",
+    "quiz": [
+      {
+        "questionId": 1,
+        "question": "What is a data structure?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "A way to store and organize data",
+            "correctAnswer": true,
+            "explanation": "Data structures are used to store and organize data in a computer so that it can be used efficiently."
+          },
+          {
+            "optionId": 2,
+            "text": "A function in programming",
+            "correctAnswer": false,
+            "explanation": "Data structures are not functions; they are methods of organizing data."
+          },
+          {
+            "optionId": 3,
+            "text": "A set of programming languages",
+            "correctAnswer": false,
+            "explanation": "Data structures are not programming languages; they are techniques used within them."
+          },
+          {
+            "optionId": 4,
+            "text": "A type of software application",
+            "correctAnswer": false,
+            "explanation": "Data structures are not applications; they are the building blocks for storing data."
+          }
+        ]
+      },
+      {
+        "questionId": 2,
+        "question": "Which of the following is a common data structure?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "Array",
+            "correctAnswer": true,
+            "explanation": "Arrays are a fundamental data structure for storing a collection of items."
+          },
+          {
+            "optionId": 2,
+            "text": "Function",
+            "correctAnswer": false,
+            "explanation": "Functions are blocks of code, not data structures."
+          },
+          {
+            "optionId": 3,
+            "text": "Compiler",
+            "correctAnswer": false,
+            "explanation": "A compiler translates programs but is not a data structure."
+          },
+          {
+            "optionId": 4,
+            "text": "Algorithm",
+            "correctAnswer": false,
+            "explanation": "An algorithm is a set of instructions, not a data structure."
+          }
+        ]
+      },
+      {
+        "questionId": 3,
+        "question": "What does 'Big O notation' describe?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "The performance of an algorithm",
+            "correctAnswer": true,
+            "explanation": "Big O notation helps evaluate the efficiency of an algorithm, particularly its time and space complexity."
+          },
+          {
+            "optionId": 2,
+            "text": "The structure of a data type",
+            "correctAnswer": false,
+            "explanation": "Big O notation is not about data structures; it's about algorithm performance."
+          },
+          {
+            "optionId": 3,
+            "text": "The size of a data structure",
+            "correctAnswer": false,
+            "explanation": "It does not quantify the size of data structures but rather the efficiency of algorithms."
+          },
+          {
+            "optionId": 4,
+            "text": "The number of variables in a program",
+            "correctAnswer": false,
+            "explanation": "It does not relate to the number of variables, but to how algorithms scale."
+          }
+        ]
+      },
+      {
+        "questionId": 4,
+        "question": "What is a linked list?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "A linear data structure made up of nodes",
+            "correctAnswer": true,
+            "explanation": "A linked list is made of nodes where each node contains data and a reference to the next node."
+          },
+          {
+            "optionId": 2,
+            "text": "A type of algorithm",
+            "correctAnswer": false,
+            "explanation": "Linked lists are not algorithms; they are a data structure."
+          },
+          {
+            "optionId": 3,
+            "text": "A collection of arrays",
+            "correctAnswer": false,
+            "explanation": "Linked lists are not collections of arrays but are a standalone data structure."
+          },
+          {
+            "optionId": 4,
+            "text": "A built-in function in programming",
+            "correctAnswer": false,
+            "explanation": "Linked lists are not functions; they are built using pointers and nodes."
+          }
+        ]
+      },
+      {
+        "questionId": 5,
+        "question": "Which is NOT a type of data structure?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "Stack",
+            "correctAnswer": false,
+            "explanation": "A stack is a well-known data structure used for managing data."
+          },
+          {
+            "optionId": 2,
+            "text": "Queue",
+            "correctAnswer": false,
+            "explanation": "A queue is also a recognized data structure, used for first-in, first-out operations."
+          },
+          {
+            "optionId": 3,
+            "text": "String",
+            "correctAnswer": false,
+            "explanation": "Strings can be considered as data structures for storing text."
+          },
+          {
+            "optionId": 4,
+            "text": "Program",
+            "correctAnswer": true,
+            "explanation": "A program is not a data structure; it's a collection of instructions to perform tasks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "quizId": 104,
+    "courseName": "CSET 1100",
+    "topic": "Lecture Content",
+    "subtopic": "Lecture 2: Fundamentals of Programming",
+    "difficulty": "Medium",
+    "quiz": [
+      {
+        "questionId": 1,
+        "question": "What is a data structure?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "A way to store and organize data",
+            "correctAnswer": true,
+            "explanation": "Data structures are used to store and organize data in a computer so that it can be used efficiently."
+          },
+          {
+            "optionId": 2,
+            "text": "A function in programming",
+            "correctAnswer": false,
+            "explanation": "Data structures are not functions; they are methods of organizing data."
+          },
+          {
+            "optionId": 3,
+            "text": "A set of programming languages",
+            "correctAnswer": false,
+            "explanation": "Data structures are not programming languages; they are techniques used within them."
+          },
+          {
+            "optionId": 4,
+            "text": "A type of software application",
+            "correctAnswer": false,
+            "explanation": "Data structures are not applications; they are the building blocks for storing data."
+          }
+        ]
+      },
+      {
+        "questionId": 2,
+        "question": "Which of the following is a common data structure?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "Array",
+            "correctAnswer": true,
+            "explanation": "Arrays are a fundamental data structure for storing a collection of items."
+          },
+          {
+            "optionId": 2,
+            "text": "Function",
+            "correctAnswer": false,
+            "explanation": "Functions are blocks of code, not data structures."
+          },
+          {
+            "optionId": 3,
+            "text": "Compiler",
+            "correctAnswer": false,
+            "explanation": "A compiler translates programs but is not a data structure."
+          },
+          {
+            "optionId": 4,
+            "text": "Algorithm",
+            "correctAnswer": false,
+            "explanation": "An algorithm is a set of instructions, not a data structure."
+          }
+        ]
+      },
+      {
+        "questionId": 3,
+        "question": "What does 'Big O notation' describe?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "The performance of an algorithm",
+            "correctAnswer": true,
+            "explanation": "Big O notation helps evaluate the efficiency of an algorithm, particularly its time and space complexity."
+          },
+          {
+            "optionId": 2,
+            "text": "The structure of a data type",
+            "correctAnswer": false,
+            "explanation": "Big O notation is not about data structures; it's about algorithm performance."
+          },
+          {
+            "optionId": 3,
+            "text": "The size of a data structure",
+            "correctAnswer": false,
+            "explanation": "It does not quantify the size of data structures but rather the efficiency of algorithms."
+          },
+          {
+            "optionId": 4,
+            "text": "The number of variables in a program",
+            "correctAnswer": false,
+            "explanation": "It does not relate to the number of variables, but to how algorithms scale."
+          }
+        ]
+      },
+      {
+        "questionId": 4,
+        "question": "What is a linked list?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "A linear data structure made up of nodes",
+            "correctAnswer": true,
+            "explanation": "A linked list is made of nodes where each node contains data and a reference to the next node."
+          },
+          {
+            "optionId": 2,
+            "text": "A type of algorithm",
+            "correctAnswer": false,
+            "explanation": "Linked lists are not algorithms; they are a data structure."
+          },
+          {
+            "optionId": 3,
+            "text": "A collection of arrays",
+            "correctAnswer": false,
+            "explanation": "Linked lists are not collections of arrays but are a standalone data structure."
+          },
+          {
+            "optionId": 4,
+            "text": "A built-in function in programming",
+            "correctAnswer": false,
+            "explanation": "Linked lists are not functions; they are built using pointers and nodes."
+          }
+        ]
+      },
+      {
+        "questionId": 5,
+        "question": "Which is NOT a type of data structure?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "Stack",
+            "correctAnswer": false,
+            "explanation": "A stack is a well-known data structure used for managing data."
+          },
+          {
+            "optionId": 2,
+            "text": "Queue",
+            "correctAnswer": false,
+            "explanation": "A queue is also a recognized data structure, used for first-in, first-out operations."
+          },
+          {
+            "optionId": 3,
+            "text": "String",
+            "correctAnswer": false,
+            "explanation": "Strings can be considered as data structures for storing text."
+          },
+          {
+            "optionId": 4,
+            "text": "Program",
+            "correctAnswer": true,
+            "explanation": "A program is not a data structure; it's a collection of instructions to perform tasks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "quizId": 62,
+    "courseName": "CSET 1100",
+    "topic": "Lecture Content",
+    "subtopic": "Lecture 1: Introduction to Computer Science",
+    "difficulty": "Hard",
+    "quiz": [
+      {
+        "questionId": 1,
+        "question": "What is the primary function of the CPU?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "To store data permanently",
+            "correctAnswer": false,
+            "explanation": "The CPU executes instructions, it doesn't store data permanently."
+          },
+          {
+            "optionId": 2,
+            "text": "To manage computer hardware",
+            "correctAnswer": false,
+            "explanation": "While the CPU interacts with hardware, its main function is instruction execution."
+          },
+          {
+            "optionId": 3,
+            "text": "To retrieve and execute instructions",
+            "correctAnswer": true,
+            "explanation": "The CPU is known as the 'brain' of the computer which retrieves instructions from memory and executes them."
+          },
+          {
+            "optionId": 4,
+            "text": "To provide user interface",
+            "correctAnswer": false,
+            "explanation": "The user interface is managed by the operating system, not the CPU."
+          }
+        ]
+      },
+      {
+        "questionId": 2,
+        "question": "What distinguishes a compiled language from an interpreted language?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "Compiled languages are always faster than interpreted ones.",
+            "correctAnswer": false,
+            "explanation": "While compiled languages generally run faster, this isn't an absolute rule as performance varies."
+          },
+          {
+            "optionId": 2,
+            "text": "Compiled languages translate code all at once before execution.",
+            "correctAnswer": true,
+            "explanation": "Compiled languages use a compiler to translate all source code into machine code before execution."
+          },
+          {
+            "optionId": 3,
+            "text": "Interpreted languages can run without any translation.",
+            "correctAnswer": false,
+            "explanation": "Interpreted languages must still be translated into machine code, just not all at once."
+          },
+          {
+            "optionId": 4,
+            "text": "Compiled languages can't be debugged.",
+            "correctAnswer": false,
+            "explanation": "Both compiled and interpreted languages can be debugged, but the processes differ."
+          }
+        ]
+      },
+      {
+        "questionId": 3,
+        "question": "What is RAM's role in a computing device?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "To permanently store the operating system",
+            "correctAnswer": false,
+            "explanation": "RAM is volatile memory, which means it does not store data permanently."
+          },
+          {
+            "optionId": 2,
+            "text": "To store data and program instructions temporarily for CPU to execute",
+            "correctAnswer": true,
+            "explanation": "RAM stores data and program instructions that the CPU needs immediately, facilitating fast access."
+          },
+          {
+            "optionId": 3,
+            "text": "To manage hardware devices connected to the computer",
+            "correctAnswer": false,
+            "explanation": "While RAM helps the CPU interact with hardware, it does not manage the devices itself."
+          },
+          {
+            "optionId": 4,
+            "text": "To ensure data persistence after the computer is shut down",
+            "correctAnswer": false,
+            "explanation": "Data persistence is usually handled by storage devices, not RAM."
+          }
+        ]
+      },
+      {
+        "questionId": 4,
+        "question": "Which of the following is true about high-level programming languages?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "They are harder to learn than machine languages.",
+            "correctAnswer": false,
+            "explanation": "High-level languages are typically easier to learn than machine languages due to their English-like syntax."
+          },
+          {
+            "optionId": 2,
+            "text": "They consist of binary code.",
+            "correctAnswer": false,
+            "explanation": "High-level languages are not written in binary; they are written in a more human-readable format."
+          },
+          {
+            "optionId": 3,
+            "text": "They require a translator to be converted to machine code.",
+            "correctAnswer": true,
+            "explanation": "High-level languages need to be translated via a compiler or interpreter to convert them into machine code for execution."
+          },
+          {
+            "optionId": 4,
+            "text": "They can only be executed on the programming environment they were written in.",
+            "correctAnswer": false,
+            "explanation": "High-level languages can often be executed on multiple platforms after compilation."
+          }
+        ]
+      },
+      {
+        "questionId": 5,
+        "question": "What does the dot pitch of a monitor refer to?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "The number of pixels on the screen.",
+            "correctAnswer": false,
+            "explanation": "Dot pitch measures the space between pixels, not the number of pixels."
+          },
+          {
+            "optionId": 2,
+            "text": "The resolution of the display.",
+            "correctAnswer": false,
+            "explanation": "Resolution indicates the total number of pixels while dot pitch refers to the space between them."
+          },
+          {
+            "optionId": 3,
+            "text": "The sharpness of the image displayed.",
+            "correctAnswer": true,
+            "explanation": "Smaller dot pitch typically results in a clearer, sharper display because the pixels are closer together."
+          },
+          {
+            "optionId": 4,
+            "text": "The type of graphics card used.",
+            "correctAnswer": false,
+            "explanation": "Dot pitch is related to display quality, not directly to the graphics card."
+          }
+        ]
+      },
+      {
+        "questionId": 6,
+        "question": "What are the three main types of programming errors?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "Runtime, Syntax, Performance",
+            "correctAnswer": false,
+            "explanation": "Performance is not categorized as an error type; typical errors include Syntax, Runtime, and Logic."
+          },
+          {
+            "optionId": 2,
+            "text": "Runtime, Logic, Syntax",
+            "correctAnswer": true,
+            "explanation": "These are the three main categories of programming errors."
+          },
+          {
+            "optionId": 3,
+            "text": "Syntax, Semantic, Type",
+            "correctAnswer": false,
+            "explanation": "Semantic is not commonly recognized as a primary category; it falls under logic or runtime errors."
+          },
+          {
+            "optionId": 4,
+            "text": "Type, Implementation, Performance",
+            "correctAnswer": false,
+            "explanation": "Type and Performance are not standard error categories compared to Runtime, Logic, and Syntax errors."
+          }
+        ]
+      },
+      {
+        "questionId": 7,
+        "question": "What distinguishes interpreted languages from compiled languages in terms of execution?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "Interpreted languages must compile code before running.",
+            "correctAnswer": false,
+            "explanation": "Interpreted languages run code directly, translating it at runtime instead of compiling it first."
+          },
+          {
+            "optionId": 2,
+            "text": "Compiled languages require an additional step of linking libraries.",
+            "correctAnswer": true,
+            "explanation": "Compiled languages undergo a linking step after compilation to ensure they can access necessary libraries."
+          },
+          {
+            "optionId": 3,
+            "text": "Interpreted languages run entirely in memory and never write to disk.",
+            "correctAnswer": false,
+            "explanation": "While interpreted languages may primarily execute in memory, they can still read from and write to disk."
+          },
+          {
+            "optionId": 4,
+            "text": "Compiled languages are slower to execute than interpreted languages.",
+            "correctAnswer": false,
+            "explanation": "Typically, compiled languages execute faster than interpreted languages since they are pre-translated into machine code."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "quizId": 164,
+    "courseName": "CSET 1100",
+    "topic": "Lecture Content",
+    "subtopic": "Lecture 2: Fundamentals of Programming",
+    "difficulty": "Hard",
+    "quiz": [
+      {
+        "questionId": 1,
+        "question": "What are the main types of programming paradigms discussed?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "Imperative, Object-Oriented, Functional, Logic, Event-driven, Concurrent",
+            "correctAnswer": true,
+            "explanation": "These are the main programming paradigms outlined in the document."
+          },
+          {
+            "optionId": 2,
+            "text": "Machine, Assembly, High-level",
+            "correctAnswer": false,
+            "explanation": "These categories refer to levels of programming languages, not paradigms."
+          },
+          {
+            "optionId": 3,
+            "text": "Compiled, Interpreted",
+            "correctAnswer": false,
+            "explanation": "These terms describe types of programming languages based on execution method."
+          },
+          {
+            "optionId": 4,
+            "text": "Statically typed, Dynamically typed",
+            "correctAnswer": false,
+            "explanation": "These refer to the type systems of programming languages, not paradigms."
+          }
+        ]
+      },
+      {
+        "questionId": 2,
+        "question": "What is a compiler?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "A tool that translates high-level source code into machine code all at once.",
+            "correctAnswer": true,
+            "explanation": "A compiler performs the translation of an entire program to machine code."
+          },
+          {
+            "optionId": 2,
+            "text": "A program that executes high-level source code line by line.",
+            "correctAnswer": false,
+            "explanation": "This describes an interpreter, not a compiler."
+          },
+          {
+            "optionId": 3,
+            "text": "A software that converts machine code back into high-level code.",
+            "correctAnswer": false,
+            "explanation": "This function is typically done by a decompiler."
+          },
+          {
+            "optionId": 4,
+            "text": "A debugger tool for correcting syntax errors.",
+            "correctAnswer": false,
+            "explanation": "While useful for debugging, a compiler's primary function is translation, not error correction."
+          }
+        ]
+      },
+      {
+        "questionId": 3,
+        "question": "Which of the following is NOT a characteristic of interpreted languages?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "They execute code one line at a time.",
+            "correctAnswer": false,
+            "explanation": "This is a common trait of interpreted languages."
+          },
+          {
+            "optionId": 2,
+            "text": "They must be compiled before execution.",
+            "correctAnswer": true,
+            "explanation": "Compiled languages are executed after complete compilation, unlike interpreted ones."
+          },
+          {
+            "optionId": 3,
+            "text": "They often require a layer of software like an interpreter.",
+            "correctAnswer": false,
+            "explanation": "This is accurate, as interpreted languages need an interpreter for execution."
+          },
+          {
+            "optionId": 4,
+            "text": "They can be slower than compiled languages.",
+            "correctAnswer": false,
+            "explanation": "Typically, interpreted languages are slower due to line-by-line execution."
+          }
+        ]
+      },
+      {
+        "questionId": 4,
+        "question": "Which programming paradigm organizes programs around data instead of actions?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "Imperative Programming",
+            "correctAnswer": false,
+            "explanation": "Imperative programming focuses on sequences of commands rather than data structuring."
+          },
+          {
+            "optionId": 2,
+            "text": "Object-Oriented Programming",
+            "correctAnswer": true,
+            "explanation": "OOP emphasizes data (objects) and the methods that operate on that data."
+          },
+          {
+            "optionId": 3,
+            "text": "Procedural Programming",
+            "correctAnswer": false,
+            "explanation": "Procedural programming is centered on procedures or routines, not just data."
+          },
+          {
+            "optionId": 4,
+            "text": "Functional Programming",
+            "correctAnswer": false,
+            "explanation": "Functional programming focuses on functions rather than data organization."
+          }
+        ]
+      },
+      {
+        "questionId": 5,
+        "question": "What does the term 'semantic error' refer to?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "An error related to the syntax of a code.",
+            "correctAnswer": false,
+            "explanation": "This describes a syntax error, not a semantic error."
+          },
+          {
+            "optionId": 2,
+            "text": "An error when the program runs but produces incorrect results.",
+            "correctAnswer": true,
+            "explanation": "Semantic errors occur when an operation executes without error but the outcome is not as intended."
+          },
+          {
+            "optionId": 3,
+            "text": "An error that prevents the program from compiling.",
+            "correctAnswer": false,
+            "explanation": "This refers to compilation errors, not semantic errors."
+          },
+          {
+            "optionId": 4,
+            "text": "An error detected by debugging.",
+            "correctAnswer": false,
+            "explanation": "While debugging can help find semantic errors, it is not a defining characteristic."
+          }
+        ]
+      },
+      {
+        "questionId": 6,
+        "question": "Which of the following is a feature of Python as described in the document?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "Python is exclusively a compiled language.",
+            "correctAnswer": false,
+            "explanation": "Python is primarily an interpreted language."
+          },
+          {
+            "optionId": 2,
+            "text": "Python supports multiple programming paradigms.",
+            "correctAnswer": true,
+            "explanation": "Python combines procedural, functional, and object-oriented programming elements."
+          },
+          {
+            "optionId": 3,
+            "text": "Python requires a dedicated virtual machine for execution.",
+            "correctAnswer": false,
+            "explanation": "Python can run in various environments without needing a specific virtual machine."
+          },
+          {
+            "optionId": 4,
+            "text": "Python syntax does not allow for whitespace significance.",
+            "correctAnswer": false,
+            "explanation": "Python syntax relies heavily on whitespace for defining code blocks."
+          }
+        ]
+      }
+    ]
+  }
+]
