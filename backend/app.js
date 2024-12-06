@@ -144,7 +144,7 @@ app.post("/generate-quiz", async (req, res) => {
       instructionsToUse = instructions_assistant_notes;
       userPrompt = `Below are the notes content you should base your quiz on:\n\n${pdfName}\n\nDifficulty: ${difficultyLevel}`;
     } else if (quizMaterial == "Lecture Videos") {
-      await transcribe(pdfName, false);
+      await transcribe(null, pdfName, false);
       let transcriptions = readTranscriptionsFromFile();
       userPrompt = `This is the video transcript: ${transcriptions[pdfName]} and this is the difficulty level: ${difficultyLevel}`;
     } else {
@@ -341,7 +341,7 @@ const writeTranscriptionsToFile = async (transcriptions) => {
   }
 };
 
-async function transcribe(audioId, query) {
+async function transcribe(res, audioId, query) {
   try {
     if (!audioFiles[audioId]) {
       if (query) {
@@ -399,7 +399,7 @@ async function transcribe(audioId, query) {
 
 app.get("/transcribe-audio/:id", async (req, res) => {
   const audioId = parseInt(req.params.id, 10);
-  await transcribe(audioId, true);
+  await transcribe(res, audioId, true);
 });
 
 // API Route to get all quizzes

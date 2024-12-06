@@ -1222,5 +1222,323 @@
         ]
       }
     ]
+  },
+  {
+    "quizId": 92,
+    "courseName": "CSET 1100",
+    "topic": "Lecture Videos",
+    "subtopic": "lecture-1",
+    "difficulty": "Easy",
+    "quiz": [
+      {
+        "questionId": 1,
+        "question": "What do syntax and semantics collectively define in computer programming?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "The logic of algorithms",
+            "correctAnswer": false,
+            "explanation": "The logic of algorithms refers to how algorithms are structured, not to the rules or meanings of language statements."
+          },
+          {
+            "optionId": 2,
+            "text": "The rules and meanings of statements",
+            "correctAnswer": true,
+            "explanation": "Syntax refers to the rules of language while semantics refers to the meanings of statements."
+          },
+          {
+            "optionId": 3,
+            "text": "The efficiency of a program",
+            "correctAnswer": false,
+            "explanation": "Efficiency of a program relates to performance, not the structure or meaning of language."
+          },
+          {
+            "optionId": 4,
+            "text": "The data structures used in programming",
+            "correctAnswer": false,
+            "explanation": "Data structures are related to how data is organized and not directly about rules or meanings."
+          }
+        ]
+      },
+      {
+        "questionId": 2,
+        "question": "What is a lexeme in programming?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "A set of characters that conveys meaning",
+            "correctAnswer": false,
+            "explanation": "A lexeme is not just a set of characters, it is the smallest unit in programming, which could represent keywords or identifiers."
+          },
+          {
+            "optionId": 2,
+            "text": "The smallest unit of a program",
+            "correctAnswer": true,
+            "explanation": "A lexeme is indeed defined as the lowest form of entity in a program."
+          },
+          {
+            "optionId": 3,
+            "text": "A compiled statement",
+            "correctAnswer": false,
+            "explanation": "A lexeme is a token, which is different from compiled statements."
+          },
+          {
+            "optionId": 4,
+            "text": "A type of error in programming",
+            "correctAnswer": false,
+            "explanation": "Lexemes are not errors; they are valid components of programming languages."
+          }
+        ]
+      },
+      {
+        "questionId": 3,
+        "question": "What is BNF used for in programming languages?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "To execute programs",
+            "correctAnswer": false,
+            "explanation": "BNF is not an execution method; it is a notation for defining syntax."
+          },
+          {
+            "optionId": 2,
+            "text": "To display syntax rules",
+            "correctAnswer": true,
+            "explanation": "BNF (Backus-Naur Form) is used to formally describe the syntax of programming languages."
+          },
+          {
+            "optionId": 3,
+            "text": "To analyze program performance",
+            "correctAnswer": false,
+            "explanation": "BNF does not analyze performance; it defines syntax."
+          },
+          {
+            "optionId": 4,
+            "text": "To compile programs directly",
+            "correctAnswer": false,
+            "explanation": "BNF is not a compilation tool; it is a descriptive format for grammar."
+          }
+        ]
+      },
+      {
+        "questionId": 4,
+        "question": "What does dynamic mean in computer programming?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "The value remains constant",
+            "correctAnswer": false,
+            "explanation": "Dynamic means that the value can change during execution."
+          },
+          {
+            "optionId": 2,
+            "text": "The value can change during execution",
+            "correctAnswer": true,
+            "explanation": "Dynamic refers to values that can be modified as the program runs."
+          },
+          {
+            "optionId": 3,
+            "text": "The program is not executable",
+            "correctAnswer": false,
+            "explanation": "Dynamic does not imply that a program is inoperable, rather it refers to value changeability."
+          },
+          {
+            "optionId": 4,
+            "text": "The values are defined at compile time",
+            "correctAnswer": false,
+            "explanation": "Values defined at compile time are static, not dynamic."
+          }
+        ]
+      },
+      {
+        "questionId": 5,
+        "question": "What is recursion in computer programming?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "A method where a sub-procedure is called multiple times",
+            "correctAnswer": true,
+            "explanation": "Recursion involves a sub-procedure calling itself multiple times during execution."
+          },
+          {
+            "optionId": 2,
+            "text": "A loop that runs indefinitely",
+            "correctAnswer": false,
+            "explanation": "Recursion does not imply endless looping; it involves defined exit conditions to stop recursive calls."
+          },
+          {
+            "optionId": 3,
+            "text": "Creating a new variable in a procedure",
+            "correctAnswer": false,
+            "explanation": "Recursion is about function self-calling, not merely declaring new variables."
+          },
+          {
+            "optionId": 4,
+            "text": "A way to simplify code",
+            "correctAnswer": false,
+            "explanation": "While recursion can simplify problems, it fundamentally denotes a specific calling pattern."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "quizId": 118,
+    "courseName": "CSET 1100",
+    "topic": "Lecture Videos",
+    "subtopic": "lecture-2",
+    "difficulty": "Medium",
+    "quiz": [
+      {
+        "questionId": 1,
+        "question": "What do syntax and semantics collectively define in computer programming?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "The logic of algorithms",
+            "correctAnswer": false,
+            "explanation": "The logic of algorithms refers to how algorithms are structured, not to the rules or meanings of language statements."
+          },
+          {
+            "optionId": 2,
+            "text": "The rules and meanings of statements",
+            "correctAnswer": true,
+            "explanation": "Syntax refers to the rules of language while semantics refers to the meanings of statements."
+          },
+          {
+            "optionId": 3,
+            "text": "The efficiency of a program",
+            "correctAnswer": false,
+            "explanation": "Efficiency of a program relates to performance, not the structure or meaning of language."
+          },
+          {
+            "optionId": 4,
+            "text": "The data structures used in programming",
+            "correctAnswer": false,
+            "explanation": "Data structures are related to how data is organized and not directly about rules or meanings."
+          }
+        ]
+      },
+      {
+        "questionId": 2,
+        "question": "What is a lexeme in programming?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "A set of characters that conveys meaning",
+            "correctAnswer": false,
+            "explanation": "A lexeme is not just a set of characters, it is the smallest unit in programming, which could represent keywords or identifiers."
+          },
+          {
+            "optionId": 2,
+            "text": "The smallest unit of a program",
+            "correctAnswer": true,
+            "explanation": "A lexeme is indeed defined as the lowest form of entity in a program."
+          },
+          {
+            "optionId": 3,
+            "text": "A compiled statement",
+            "correctAnswer": false,
+            "explanation": "A lexeme is a token, which is different from compiled statements."
+          },
+          {
+            "optionId": 4,
+            "text": "A type of error in programming",
+            "correctAnswer": false,
+            "explanation": "Lexemes are not errors; they are valid components of programming languages."
+          }
+        ]
+      },
+      {
+        "questionId": 3,
+        "question": "What is BNF used for in programming languages?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "To execute programs",
+            "correctAnswer": false,
+            "explanation": "BNF is not an execution method; it is a notation for defining syntax."
+          },
+          {
+            "optionId": 2,
+            "text": "To display syntax rules",
+            "correctAnswer": true,
+            "explanation": "BNF (Backus-Naur Form) is used to formally describe the syntax of programming languages."
+          },
+          {
+            "optionId": 3,
+            "text": "To analyze program performance",
+            "correctAnswer": false,
+            "explanation": "BNF does not analyze performance; it defines syntax."
+          },
+          {
+            "optionId": 4,
+            "text": "To compile programs directly",
+            "correctAnswer": false,
+            "explanation": "BNF is not a compilation tool; it is a descriptive format for grammar."
+          }
+        ]
+      },
+      {
+        "questionId": 4,
+        "question": "What does dynamic mean in computer programming?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "The value remains constant",
+            "correctAnswer": false,
+            "explanation": "Dynamic means that the value can change during execution."
+          },
+          {
+            "optionId": 2,
+            "text": "The value can change during execution",
+            "correctAnswer": true,
+            "explanation": "Dynamic refers to values that can be modified as the program runs."
+          },
+          {
+            "optionId": 3,
+            "text": "The program is not executable",
+            "correctAnswer": false,
+            "explanation": "Dynamic does not imply that a program is inoperable, rather it refers to value changeability."
+          },
+          {
+            "optionId": 4,
+            "text": "The values are defined at compile time",
+            "correctAnswer": false,
+            "explanation": "Values defined at compile time are static, not dynamic."
+          }
+        ]
+      },
+      {
+        "questionId": 5,
+        "question": "What is recursion in computer programming?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "A method where a sub-procedure is called multiple times",
+            "correctAnswer": true,
+            "explanation": "Recursion involves a sub-procedure calling itself multiple times during execution."
+          },
+          {
+            "optionId": 2,
+            "text": "A loop that runs indefinitely",
+            "correctAnswer": false,
+            "explanation": "Recursion does not imply endless looping; it involves defined exit conditions to stop recursive calls."
+          },
+          {
+            "optionId": 3,
+            "text": "Creating a new variable in a procedure",
+            "correctAnswer": false,
+            "explanation": "Recursion is about function self-calling, not merely declaring new variables."
+          },
+          {
+            "optionId": 4,
+            "text": "A way to simplify code",
+            "correctAnswer": false,
+            "explanation": "While recursion can simplify problems, it fundamentally denotes a specific calling pattern."
+          }
+        ]
+      }
+    ]
   }
 ]
