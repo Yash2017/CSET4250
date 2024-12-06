@@ -309,8 +309,9 @@ app.post("/get-quiz-feedback", async (req, res) => {
 // });
 
 const audioFiles = {
-  1: "/Users/yash/Downloads/CSET 4350/audio1.mp3",
-  2: "/Users/yash/Downloads/CSET 4350/audio1.mp3",
+  1: "./1.mp3",
+  2: "./2.mp3",
+  3: "./3.mp3",
   // we can modify the paths and more tomorrow. Note a 30 minute video took about 2-3 minutes to transcribe
 };
 
