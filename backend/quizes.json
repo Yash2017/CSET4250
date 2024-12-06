@@ -1,725 +1,1094 @@
 [
   {
-    "quizId": 140,
+    "quizId": 76,
     "courseName": "CSET 1100",
     "topic": "Lecture Content",
-    "subtopic": "Lecture 3: Data Structures and Algorithms",
-    "difficulty": "Easy",
-    "quiz": [
-      {
-        "questionId": 1,
-        "question": "What is a data structure?",
-        "options": [
-          {
-            "optionId": 1,
-            "text": "A way to store and organize data",
-            "correctAnswer": true,
-            "explanation": "Data structures are used to store and organize data in a computer so that it can be used efficiently."
-          },
-          {
-            "optionId": 2,
-            "text": "A function in programming",
-            "correctAnswer": false,
-            "explanation": "Data structures are not functions; they are methods of organizing data."
-          },
-          {
-            "optionId": 3,
-            "text": "A set of programming languages",
-            "correctAnswer": false,
-            "explanation": "Data structures are not programming languages; they are techniques used within them."
-          },
-          {
-            "optionId": 4,
-            "text": "A type of software application",
-            "correctAnswer": false,
-            "explanation": "Data structures are not applications; they are the building blocks for storing data."
-          }
-        ]
-      },
-      {
-        "questionId": 2,
-        "question": "Which of the following is a common data structure?",
-        "options": [
-          {
-            "optionId": 1,
-            "text": "Array",
-            "correctAnswer": true,
-            "explanation": "Arrays are a fundamental data structure for storing a collection of items."
-          },
-          {
-            "optionId": 2,
-            "text": "Function",
-            "correctAnswer": false,
-            "explanation": "Functions are blocks of code, not data structures."
-          },
-          {
-            "optionId": 3,
-            "text": "Compiler",
-            "correctAnswer": false,
-            "explanation": "A compiler translates programs but is not a data structure."
-          },
-          {
-            "optionId": 4,
-            "text": "Algorithm",
-            "correctAnswer": false,
-            "explanation": "An algorithm is a set of instructions, not a data structure."
-          }
-        ]
-      },
-      {
-        "questionId": 3,
-        "question": "What does 'Big O notation' describe?",
-        "options": [
-          {
-            "optionId": 1,
-            "text": "The performance of an algorithm",
-            "correctAnswer": true,
-            "explanation": "Big O notation helps evaluate the efficiency of an algorithm, particularly its time and space complexity."
-          },
-          {
-            "optionId": 2,
-            "text": "The structure of a data type",
-            "correctAnswer": false,
-            "explanation": "Big O notation is not about data structures; it's about algorithm performance."
-          },
-          {
-            "optionId": 3,
-            "text": "The size of a data structure",
-            "correctAnswer": false,
-            "explanation": "It does not quantify the size of data structures but rather the efficiency of algorithms."
-          },
-          {
-            "optionId": 4,
-            "text": "The number of variables in a program",
-            "correctAnswer": false,
-            "explanation": "It does not relate to the number of variables, but to how algorithms scale."
-          }
-        ]
-      },
-      {
-        "questionId": 4,
-        "question": "What is a linked list?",
-        "options": [
-          {
-            "optionId": 1,
-            "text": "A linear data structure made up of nodes",
-            "correctAnswer": true,
-            "explanation": "A linked list is made of nodes where each node contains data and a reference to the next node."
-          },
-          {
-            "optionId": 2,
-            "text": "A type of algorithm",
-            "correctAnswer": false,
-            "explanation": "Linked lists are not algorithms; they are a data structure."
-          },
-          {
-            "optionId": 3,
-            "text": "A collection of arrays",
-            "correctAnswer": false,
-            "explanation": "Linked lists are not collections of arrays but are a standalone data structure."
-          },
-          {
-            "optionId": 4,
-            "text": "A built-in function in programming",
-            "correctAnswer": false,
-            "explanation": "Linked lists are not functions; they are built using pointers and nodes."
-          }
-        ]
-      },
-      {
-        "questionId": 5,
-        "question": "Which is NOT a type of data structure?",
-        "options": [
-          {
-            "optionId": 1,
-            "text": "Stack",
-            "correctAnswer": false,
-            "explanation": "A stack is a well-known data structure used for managing data."
-          },
-          {
-            "optionId": 2,
-            "text": "Queue",
-            "correctAnswer": false,
-            "explanation": "A queue is also a recognized data structure, used for first-in, first-out operations."
-          },
-          {
-            "optionId": 3,
-            "text": "String",
-            "correctAnswer": false,
-            "explanation": "Strings can be considered as data structures for storing text."
-          },
-          {
-            "optionId": 4,
-            "text": "Program",
-            "correctAnswer": true,
-            "explanation": "A program is not a data structure; it's a collection of instructions to perform tasks."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "quizId": 104,
-    "courseName": "CSET 1100",
-    "topic": "Lecture Content",
-    "subtopic": "Lecture 2: Fundamentals of Programming",
-    "difficulty": "Medium",
-    "quiz": [
-      {
-        "questionId": 1,
-        "question": "What is a data structure?",
-        "options": [
-          {
-            "optionId": 1,
-            "text": "A way to store and organize data",
-            "correctAnswer": true,
-            "explanation": "Data structures are used to store and organize data in a computer so that it can be used efficiently."
-          },
-          {
-            "optionId": 2,
-            "text": "A function in programming",
-            "correctAnswer": false,
-            "explanation": "Data structures are not functions; they are methods of organizing data."
-          },
-          {
-            "optionId": 3,
-            "text": "A set of programming languages",
-            "correctAnswer": false,
-            "explanation": "Data structures are not programming languages; they are techniques used within them."
-          },
-          {
-            "optionId": 4,
-            "text": "A type of software application",
-            "correctAnswer": false,
-            "explanation": "Data structures are not applications; they are the building blocks for storing data."
-          }
-        ]
-      },
-      {
-        "questionId": 2,
-        "question": "Which of the following is a common data structure?",
-        "options": [
-          {
-            "optionId": 1,
-            "text": "Array",
-            "correctAnswer": true,
-            "explanation": "Arrays are a fundamental data structure for storing a collection of items."
-          },
-          {
-            "optionId": 2,
-            "text": "Function",
-            "correctAnswer": false,
-            "explanation": "Functions are blocks of code, not data structures."
-          },
-          {
-            "optionId": 3,
-            "text": "Compiler",
-            "correctAnswer": false,
-            "explanation": "A compiler translates programs but is not a data structure."
-          },
-          {
-            "optionId": 4,
-            "text": "Algorithm",
-            "correctAnswer": false,
-            "explanation": "An algorithm is a set of instructions, not a data structure."
-          }
-        ]
-      },
-      {
-        "questionId": 3,
-        "question": "What does 'Big O notation' describe?",
-        "options": [
-          {
-            "optionId": 1,
-            "text": "The performance of an algorithm",
-            "correctAnswer": true,
-            "explanation": "Big O notation helps evaluate the efficiency of an algorithm, particularly its time and space complexity."
-          },
-          {
-            "optionId": 2,
-            "text": "The structure of a data type",
-            "correctAnswer": false,
-            "explanation": "Big O notation is not about data structures; it's about algorithm performance."
-          },
-          {
-            "optionId": 3,
-            "text": "The size of a data structure",
-            "correctAnswer": false,
-            "explanation": "It does not quantify the size of data structures but rather the efficiency of algorithms."
-          },
-          {
-            "optionId": 4,
-            "text": "The number of variables in a program",
-            "correctAnswer": false,
-            "explanation": "It does not relate to the number of variables, but to how algorithms scale."
-          }
-        ]
-      },
-      {
-        "questionId": 4,
-        "question": "What is a linked list?",
-        "options": [
-          {
-            "optionId": 1,
-            "text": "A linear data structure made up of nodes",
-            "correctAnswer": true,
-            "explanation": "A linked list is made of nodes where each node contains data and a reference to the next node."
-          },
-          {
-            "optionId": 2,
-            "text": "A type of algorithm",
-            "correctAnswer": false,
-            "explanation": "Linked lists are not algorithms; they are a data structure."
-          },
-          {
-            "optionId": 3,
-            "text": "A collection of arrays",
-            "correctAnswer": false,
-            "explanation": "Linked lists are not collections of arrays but are a standalone data structure."
-          },
-          {
-            "optionId": 4,
-            "text": "A built-in function in programming",
-            "correctAnswer": false,
-            "explanation": "Linked lists are not functions; they are built using pointers and nodes."
-          }
-        ]
-      },
-      {
-        "questionId": 5,
-        "question": "Which is NOT a type of data structure?",
-        "options": [
-          {
-            "optionId": 1,
-            "text": "Stack",
-            "correctAnswer": false,
-            "explanation": "A stack is a well-known data structure used for managing data."
-          },
-          {
-            "optionId": 2,
-            "text": "Queue",
-            "correctAnswer": false,
-            "explanation": "A queue is also a recognized data structure, used for first-in, first-out operations."
-          },
-          {
-            "optionId": 3,
-            "text": "String",
-            "correctAnswer": false,
-            "explanation": "Strings can be considered as data structures for storing text."
-          },
-          {
-            "optionId": 4,
-            "text": "Program",
-            "correctAnswer": true,
-            "explanation": "A program is not a data structure; it's a collection of instructions to perform tasks."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "quizId": 62,
-    "courseName": "CSET 1100",
-    "topic": "Lecture Content",
-    "subtopic": "Lecture 1: Introduction to Computer Science",
+    "subtopic": "Lecture 5: Math operators in python",
     "difficulty": "Hard",
     "quiz": [
       {
         "questionId": 1,
-        "question": "What is the primary function of the CPU?",
+        "question": "What is the return value of pow(2, 3) in Python?",
         "options": [
           {
             "optionId": 1,
-            "text": "To store data permanently",
+            "text": "6",
             "correctAnswer": false,
-            "explanation": "The CPU executes instructions, it doesn't store data permanently."
+            "explanation": "The expression pow(2, 3) returns 2 raised to the power of 3, which equals 8."
           },
           {
             "optionId": 2,
-            "text": "To manage computer hardware",
-            "correctAnswer": false,
-            "explanation": "While the CPU interacts with hardware, its main function is instruction execution."
+            "text": "8",
+            "correctAnswer": true,
+            "explanation": "Correct! pow(2, 3) computes to 2 ** 3, which equals 8."
           },
           {
             "optionId": 3,
-            "text": "To retrieve and execute instructions",
-            "correctAnswer": true,
-            "explanation": "The CPU is known as the 'brain' of the computer which retrieves instructions from memory and executes them."
+            "text": "9",
+            "correctAnswer": false,
+            "explanation": "The expression pow(2, 3) evaluates to 8, not 9."
           },
           {
             "optionId": 4,
-            "text": "To provide user interface",
+            "text": "4",
             "correctAnswer": false,
-            "explanation": "The user interface is managed by the operating system, not the CPU."
+            "explanation": "4 is the square of 2, not the result of pow(2, 3)."
           }
         ]
       },
       {
         "questionId": 2,
-        "question": "What distinguishes a compiled language from an interpreted language?",
+        "question": "How does the ceil function behave with negative numbers?",
         "options": [
           {
             "optionId": 1,
-            "text": "Compiled languages are always faster than interpreted ones.",
+            "text": "It rounds up to the next integer.",
             "correctAnswer": false,
-            "explanation": "While compiled languages generally run faster, this isn't an absolute rule as performance varies."
+            "explanation": "Ceil actually rounds towards positive infinity."
           },
           {
             "optionId": 2,
-            "text": "Compiled languages translate code all at once before execution.",
-            "correctAnswer": true,
-            "explanation": "Compiled languages use a compiler to translate all source code into machine code before execution."
+            "text": "It rounds down to the nearest integer.",
+            "correctAnswer": false,
+            "explanation": "Ceil rounds up, which means it gets less negative for negative numbers."
           },
           {
             "optionId": 3,
-            "text": "Interpreted languages can run without any translation.",
+            "text": "It returns the same number.",
             "correctAnswer": false,
-            "explanation": "Interpreted languages must still be translated into machine code, just not all at once."
+            "explanation": "Ceil will change the number to its closest upper integer, e.g., ceil(-2.1) is -2."
           },
           {
             "optionId": 4,
-            "text": "Compiled languages can't be debugged.",
-            "correctAnswer": false,
-            "explanation": "Both compiled and interpreted languages can be debugged, but the processes differ."
+            "text": "It rounds towards positive infinity.",
+            "correctAnswer": true,
+            "explanation": "Correct! For -2.1, ceil(-2.1) results in -2, the closest upper integer."
           }
         ]
       },
       {
         "questionId": 3,
-        "question": "What is RAM's role in a computing device?",
+        "question": "What does the function sqrt(16) return?",
         "options": [
           {
             "optionId": 1,
-            "text": "To permanently store the operating system",
+            "text": "2",
             "correctAnswer": false,
-            "explanation": "RAM is volatile memory, which means it does not store data permanently."
+            "explanation": "The square root of 16 is not 2."
           },
           {
             "optionId": 2,
-            "text": "To store data and program instructions temporarily for CPU to execute",
+            "text": "4",
             "correctAnswer": true,
-            "explanation": "RAM stores data and program instructions that the CPU needs immediately, facilitating fast access."
+            "explanation": "Correct! sqrt(16) returns 4."
           },
           {
             "optionId": 3,
-            "text": "To manage hardware devices connected to the computer",
+            "text": "8",
             "correctAnswer": false,
-            "explanation": "While RAM helps the CPU interact with hardware, it does not manage the devices itself."
+            "explanation": "8 is not the square root, rather 16 is 4 times 4."
           },
           {
             "optionId": 4,
-            "text": "To ensure data persistence after the computer is shut down",
+            "text": "16",
             "correctAnswer": false,
-            "explanation": "Data persistence is usually handled by storage devices, not RAM."
+            "explanation": "Because 16 is the argument, the return value will be less than 16 for sqrt."
           }
         ]
       },
       {
         "questionId": 4,
-        "question": "Which of the following is true about high-level programming languages?",
+        "question": "Which of the following correctly describes the function log(x, base)?",
         "options": [
           {
             "optionId": 1,
-            "text": "They are harder to learn than machine languages.",
+            "text": "It calculates the logarithm of x in base 10 only.",
             "correctAnswer": false,
-            "explanation": "High-level languages are typically easier to learn than machine languages due to their English-like syntax."
+            "explanation": "log(x, base) can compute logarithms in any base, not just 10."
           },
           {
             "optionId": 2,
-            "text": "They consist of binary code.",
-            "correctAnswer": false,
-            "explanation": "High-level languages are not written in binary; they are written in a more human-readable format."
+            "text": "It returns the natural logarithm of x if no base is provided.",
+            "correctAnswer": true,
+            "explanation": "Correct! log(x) gives the natural logarithm if the base is not specified."
           },
           {
             "optionId": 3,
-            "text": "They require a translator to be converted to machine code.",
-            "correctAnswer": true,
-            "explanation": "High-level languages need to be translated via a compiler or interpreter to convert them into machine code for execution."
+            "text": "It only works for integers.",
+            "correctAnswer": false,
+            "explanation": "This function works for any real-number inputs for x."
           },
           {
             "optionId": 4,
-            "text": "They can only be executed on the programming environment they were written in.",
+            "text": "It raises x to the provided base.",
             "correctAnswer": false,
-            "explanation": "High-level languages can often be executed on multiple platforms after compilation."
+            "explanation": "It computes log, not an exponentiation."
           }
         ]
       },
       {
         "questionId": 5,
-        "question": "What does the dot pitch of a monitor refer to?",
+        "question": "What is the purpose of fmod(x, y)?",
         "options": [
           {
             "optionId": 1,
-            "text": "The number of pixels on the screen.",
+            "text": "It returns x raised to the power of y.",
             "correctAnswer": false,
-            "explanation": "Dot pitch measures the space between pixels, not the number of pixels."
+            "explanation": "That description belongs to the pow() function."
           },
           {
             "optionId": 2,
-            "text": "The resolution of the display.",
-            "correctAnswer": false,
-            "explanation": "Resolution indicates the total number of pixels while dot pitch refers to the space between them."
+            "text": "It returns the remainder of x divided by y.",
+            "correctAnswer": true,
+            "explanation": "Correct! fmod(x, y) returns the remainder of x divided by y."
           },
           {
             "optionId": 3,
-            "text": "The sharpness of the image displayed.",
-            "correctAnswer": true,
-            "explanation": "Smaller dot pitch typically results in a clearer, sharper display because the pixels are closer together."
+            "text": "It computes the floor of x divided by y.",
+            "correctAnswer": false,
+            "explanation": "This operation does not provide the floor division."
           },
           {
             "optionId": 4,
-            "text": "The type of graphics card used.",
+            "text": "It adds x and y.",
             "correctAnswer": false,
-            "explanation": "Dot pitch is related to display quality, not directly to the graphics card."
+            "explanation": "This function is designed for remainder operation, not addition."
           }
         ]
       },
       {
         "questionId": 6,
-        "question": "What are the three main types of programming errors?",
+        "question": "How is the function degrees(x) used in Python?",
         "options": [
           {
             "optionId": 1,
-            "text": "Runtime, Syntax, Performance",
-            "correctAnswer": false,
-            "explanation": "Performance is not categorized as an error type; typical errors include Syntax, Runtime, and Logic."
+            "text": "It converts radians to degrees.",
+            "correctAnswer": true,
+            "explanation": "Correct! degrees() takes an angle in radians and converts it to degrees."
           },
           {
             "optionId": 2,
-            "text": "Runtime, Logic, Syntax",
-            "correctAnswer": true,
-            "explanation": "These are the three main categories of programming errors."
+            "text": "It converts degrees to radians.",
+            "correctAnswer": false,
+            "explanation": "That function would be radians(x) instead."
           },
           {
             "optionId": 3,
-            "text": "Syntax, Semantic, Type",
+            "text": "It transforms angles for trigonometric functions.",
             "correctAnswer": false,
-            "explanation": "Semantic is not commonly recognized as a primary category; it falls under logic or runtime errors."
+            "explanation": "It does not transform angles, just converts the units."
           },
           {
             "optionId": 4,
-            "text": "Type, Implementation, Performance",
+            "text": "It is used for temperature conversion.",
             "correctAnswer": false,
-            "explanation": "Type and Performance are not standard error categories compared to Runtime, Logic, and Syntax errors."
+            "explanation": "degrees() is not related to temperature conversions."
           }
         ]
       },
       {
         "questionId": 7,
-        "question": "What distinguishes interpreted languages from compiled languages in terms of execution?",
+        "question": "What is the planned output of ceil(-3.7)?",
         "options": [
           {
             "optionId": 1,
-            "text": "Interpreted languages must compile code before running.",
-            "correctAnswer": false,
-            "explanation": "Interpreted languages run code directly, translating it at runtime instead of compiling it first."
+            "text": "-3",
+            "correctAnswer": true,
+            "explanation": "Correct! ceil(-3.7) rounds towards positive infinity, yielding -3."
           },
           {
             "optionId": 2,
-            "text": "Compiled languages require an additional step of linking libraries.",
-            "correctAnswer": true,
-            "explanation": "Compiled languages undergo a linking step after compilation to ensure they can access necessary libraries."
+            "text": "-4",
+            "correctAnswer": false,
+            "explanation": "That would be the floor of -3.7, not the ceil."
           },
           {
             "optionId": 3,
-            "text": "Interpreted languages run entirely in memory and never write to disk.",
+            "text": "-3.7",
             "correctAnswer": false,
-            "explanation": "While interpreted languages may primarily execute in memory, they can still read from and write to disk."
+            "explanation": "ceil does not return the original number if it’s not an integer."
           },
           {
             "optionId": 4,
-            "text": "Compiled languages are slower to execute than interpreted languages.",
+            "text": "0",
             "correctAnswer": false,
-            "explanation": "Typically, compiled languages execute faster than interpreted languages since they are pre-translated into machine code."
+            "explanation": "Ceil function will bring it closer to 0, but not actually return it."
           }
         ]
       }
     ]
   },
   {
-    "quizId": 164,
+    "quizId": 68,
     "courseName": "CSET 1100",
-    "topic": "Lecture Content",
-    "subtopic": "Lecture 2: Fundamentals of Programming",
-    "difficulty": "Hard",
+    "topic": "Lecture Videos",
+    "subtopic": "lecture-1",
+    "difficulty": "Medium",
     "quiz": [
       {
         "questionId": 1,
-        "question": "What are the main types of programming paradigms discussed?",
+        "question": "What is the return value of pow(2, 3) in Python?",
         "options": [
           {
             "optionId": 1,
-            "text": "Imperative, Object-Oriented, Functional, Logic, Event-driven, Concurrent",
-            "correctAnswer": true,
-            "explanation": "These are the main programming paradigms outlined in the document."
+            "text": "6",
+            "correctAnswer": false,
+            "explanation": "The expression pow(2, 3) returns 2 raised to the power of 3, which equals 8."
           },
           {
             "optionId": 2,
-            "text": "Machine, Assembly, High-level",
-            "correctAnswer": false,
-            "explanation": "These categories refer to levels of programming languages, not paradigms."
+            "text": "8",
+            "correctAnswer": true,
+            "explanation": "Correct! pow(2, 3) computes to 2 ** 3, which equals 8."
           },
           {
             "optionId": 3,
-            "text": "Compiled, Interpreted",
+            "text": "9",
             "correctAnswer": false,
-            "explanation": "These terms describe types of programming languages based on execution method."
+            "explanation": "The expression pow(2, 3) evaluates to 8, not 9."
           },
           {
             "optionId": 4,
-            "text": "Statically typed, Dynamically typed",
+            "text": "4",
             "correctAnswer": false,
-            "explanation": "These refer to the type systems of programming languages, not paradigms."
+            "explanation": "4 is the square of 2, not the result of pow(2, 3)."
           }
         ]
       },
       {
         "questionId": 2,
-        "question": "What is a compiler?",
+        "question": "How does the ceil function behave with negative numbers?",
         "options": [
           {
             "optionId": 1,
-            "text": "A tool that translates high-level source code into machine code all at once.",
-            "correctAnswer": true,
-            "explanation": "A compiler performs the translation of an entire program to machine code."
+            "text": "It rounds up to the next integer.",
+            "correctAnswer": false,
+            "explanation": "Ceil actually rounds towards positive infinity."
           },
           {
             "optionId": 2,
-            "text": "A program that executes high-level source code line by line.",
+            "text": "It rounds down to the nearest integer.",
             "correctAnswer": false,
-            "explanation": "This describes an interpreter, not a compiler."
+            "explanation": "Ceil rounds up, which means it gets less negative for negative numbers."
           },
           {
             "optionId": 3,
-            "text": "A software that converts machine code back into high-level code.",
+            "text": "It returns the same number.",
             "correctAnswer": false,
-            "explanation": "This function is typically done by a decompiler."
+            "explanation": "Ceil will change the number to its closest upper integer, e.g., ceil(-2.1) is -2."
           },
           {
             "optionId": 4,
-            "text": "A debugger tool for correcting syntax errors.",
-            "correctAnswer": false,
-            "explanation": "While useful for debugging, a compiler's primary function is translation, not error correction."
+            "text": "It rounds towards positive infinity.",
+            "correctAnswer": true,
+            "explanation": "Correct! For -2.1, ceil(-2.1) results in -2, the closest upper integer."
           }
         ]
       },
       {
         "questionId": 3,
-        "question": "Which of the following is NOT a characteristic of interpreted languages?",
+        "question": "What does the function sqrt(16) return?",
         "options": [
           {
             "optionId": 1,
-            "text": "They execute code one line at a time.",
+            "text": "2",
             "correctAnswer": false,
-            "explanation": "This is a common trait of interpreted languages."
+            "explanation": "The square root of 16 is not 2."
           },
           {
             "optionId": 2,
-            "text": "They must be compiled before execution.",
+            "text": "4",
             "correctAnswer": true,
-            "explanation": "Compiled languages are executed after complete compilation, unlike interpreted ones."
+            "explanation": "Correct! sqrt(16) returns 4."
           },
           {
             "optionId": 3,
-            "text": "They often require a layer of software like an interpreter.",
+            "text": "8",
             "correctAnswer": false,
-            "explanation": "This is accurate, as interpreted languages need an interpreter for execution."
+            "explanation": "8 is not the square root, rather 16 is 4 times 4."
           },
           {
             "optionId": 4,
-            "text": "They can be slower than compiled languages.",
+            "text": "16",
             "correctAnswer": false,
-            "explanation": "Typically, interpreted languages are slower due to line-by-line execution."
+            "explanation": "Because 16 is the argument, the return value will be less than 16 for sqrt."
           }
         ]
       },
       {
         "questionId": 4,
-        "question": "Which programming paradigm organizes programs around data instead of actions?",
+        "question": "Which of the following correctly describes the function log(x, base)?",
         "options": [
           {
             "optionId": 1,
-            "text": "Imperative Programming",
+            "text": "It calculates the logarithm of x in base 10 only.",
             "correctAnswer": false,
-            "explanation": "Imperative programming focuses on sequences of commands rather than data structuring."
+            "explanation": "log(x, base) can compute logarithms in any base, not just 10."
           },
           {
             "optionId": 2,
-            "text": "Object-Oriented Programming",
+            "text": "It returns the natural logarithm of x if no base is provided.",
             "correctAnswer": true,
-            "explanation": "OOP emphasizes data (objects) and the methods that operate on that data."
+            "explanation": "Correct! log(x) gives the natural logarithm if the base is not specified."
           },
           {
             "optionId": 3,
-            "text": "Procedural Programming",
+            "text": "It only works for integers.",
             "correctAnswer": false,
-            "explanation": "Procedural programming is centered on procedures or routines, not just data."
+            "explanation": "This function works for any real-number inputs for x."
           },
           {
             "optionId": 4,
-            "text": "Functional Programming",
+            "text": "It raises x to the provided base.",
             "correctAnswer": false,
-            "explanation": "Functional programming focuses on functions rather than data organization."
+            "explanation": "It computes log, not an exponentiation."
           }
         ]
       },
       {
         "questionId": 5,
-        "question": "What does the term 'semantic error' refer to?",
+        "question": "What is the purpose of fmod(x, y)?",
         "options": [
           {
             "optionId": 1,
-            "text": "An error related to the syntax of a code.",
+            "text": "It returns x raised to the power of y.",
             "correctAnswer": false,
-            "explanation": "This describes a syntax error, not a semantic error."
+            "explanation": "That description belongs to the pow() function."
           },
           {
             "optionId": 2,
-            "text": "An error when the program runs but produces incorrect results.",
+            "text": "It returns the remainder of x divided by y.",
             "correctAnswer": true,
-            "explanation": "Semantic errors occur when an operation executes without error but the outcome is not as intended."
+            "explanation": "Correct! fmod(x, y) returns the remainder of x divided by y."
           },
           {
             "optionId": 3,
-            "text": "An error that prevents the program from compiling.",
+            "text": "It computes the floor of x divided by y.",
             "correctAnswer": false,
-            "explanation": "This refers to compilation errors, not semantic errors."
+            "explanation": "This operation does not provide the floor division."
           },
           {
             "optionId": 4,
-            "text": "An error detected by debugging.",
+            "text": "It adds x and y.",
             "correctAnswer": false,
-            "explanation": "While debugging can help find semantic errors, it is not a defining characteristic."
+            "explanation": "This function is designed for remainder operation, not addition."
           }
         ]
       },
       {
         "questionId": 6,
-        "question": "Which of the following is a feature of Python as described in the document?",
+        "question": "How is the function degrees(x) used in Python?",
         "options": [
           {
             "optionId": 1,
-            "text": "Python is exclusively a compiled language.",
-            "correctAnswer": false,
-            "explanation": "Python is primarily an interpreted language."
+            "text": "It converts radians to degrees.",
+            "correctAnswer": true,
+            "explanation": "Correct! degrees() takes an angle in radians and converts it to degrees."
           },
           {
             "optionId": 2,
-            "text": "Python supports multiple programming paradigms.",
-            "correctAnswer": true,
-            "explanation": "Python combines procedural, functional, and object-oriented programming elements."
+            "text": "It converts degrees to radians.",
+            "correctAnswer": false,
+            "explanation": "That function would be radians(x) instead."
           },
           {
             "optionId": 3,
-            "text": "Python requires a dedicated virtual machine for execution.",
+            "text": "It transforms angles for trigonometric functions.",
             "correctAnswer": false,
-            "explanation": "Python can run in various environments without needing a specific virtual machine."
+            "explanation": "It does not transform angles, just converts the units."
           },
           {
             "optionId": 4,
-            "text": "Python syntax does not allow for whitespace significance.",
+            "text": "It is used for temperature conversion.",
             "correctAnswer": false,
-            "explanation": "Python syntax relies heavily on whitespace for defining code blocks."
+            "explanation": "degrees() is not related to temperature conversions."
+          }
+        ]
+      },
+      {
+        "questionId": 7,
+        "question": "What is the planned output of ceil(-3.7)?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "-3",
+            "correctAnswer": true,
+            "explanation": "Correct! ceil(-3.7) rounds towards positive infinity, yielding -3."
+          },
+          {
+            "optionId": 2,
+            "text": "-4",
+            "correctAnswer": false,
+            "explanation": "That would be the floor of -3.7, not the ceil."
+          },
+          {
+            "optionId": 3,
+            "text": "-3.7",
+            "correctAnswer": false,
+            "explanation": "ceil does not return the original number if it’s not an integer."
+          },
+          {
+            "optionId": 4,
+            "text": "0",
+            "correctAnswer": false,
+            "explanation": "Ceil function will bring it closer to 0, but not actually return it."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "quizId": 26,
+    "courseName": "CSET 1100",
+    "topic": "Notes",
+    "subtopic": "note-2",
+    "difficulty": "Easy",
+    "quiz": [
+      {
+        "questionId": 1,
+        "question": "What is the return value of pow(2, 3) in Python?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "6",
+            "correctAnswer": false,
+            "explanation": "The expression pow(2, 3) returns 2 raised to the power of 3, which equals 8."
+          },
+          {
+            "optionId": 2,
+            "text": "8",
+            "correctAnswer": true,
+            "explanation": "Correct! pow(2, 3) computes to 2 ** 3, which equals 8."
+          },
+          {
+            "optionId": 3,
+            "text": "9",
+            "correctAnswer": false,
+            "explanation": "The expression pow(2, 3) evaluates to 8, not 9."
+          },
+          {
+            "optionId": 4,
+            "text": "4",
+            "correctAnswer": false,
+            "explanation": "4 is the square of 2, not the result of pow(2, 3)."
+          }
+        ]
+      },
+      {
+        "questionId": 2,
+        "question": "How does the ceil function behave with negative numbers?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "It rounds up to the next integer.",
+            "correctAnswer": false,
+            "explanation": "Ceil actually rounds towards positive infinity."
+          },
+          {
+            "optionId": 2,
+            "text": "It rounds down to the nearest integer.",
+            "correctAnswer": false,
+            "explanation": "Ceil rounds up, which means it gets less negative for negative numbers."
+          },
+          {
+            "optionId": 3,
+            "text": "It returns the same number.",
+            "correctAnswer": false,
+            "explanation": "Ceil will change the number to its closest upper integer, e.g., ceil(-2.1) is -2."
+          },
+          {
+            "optionId": 4,
+            "text": "It rounds towards positive infinity.",
+            "correctAnswer": true,
+            "explanation": "Correct! For -2.1, ceil(-2.1) results in -2, the closest upper integer."
+          }
+        ]
+      },
+      {
+        "questionId": 3,
+        "question": "What does the function sqrt(16) return?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "2",
+            "correctAnswer": false,
+            "explanation": "The square root of 16 is not 2."
+          },
+          {
+            "optionId": 2,
+            "text": "4",
+            "correctAnswer": true,
+            "explanation": "Correct! sqrt(16) returns 4."
+          },
+          {
+            "optionId": 3,
+            "text": "8",
+            "correctAnswer": false,
+            "explanation": "8 is not the square root, rather 16 is 4 times 4."
+          },
+          {
+            "optionId": 4,
+            "text": "16",
+            "correctAnswer": false,
+            "explanation": "Because 16 is the argument, the return value will be less than 16 for sqrt."
+          }
+        ]
+      },
+      {
+        "questionId": 4,
+        "question": "Which of the following correctly describes the function log(x, base)?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "It calculates the logarithm of x in base 10 only.",
+            "correctAnswer": false,
+            "explanation": "log(x, base) can compute logarithms in any base, not just 10."
+          },
+          {
+            "optionId": 2,
+            "text": "It returns the natural logarithm of x if no base is provided.",
+            "correctAnswer": true,
+            "explanation": "Correct! log(x) gives the natural logarithm if the base is not specified."
+          },
+          {
+            "optionId": 3,
+            "text": "It only works for integers.",
+            "correctAnswer": false,
+            "explanation": "This function works for any real-number inputs for x."
+          },
+          {
+            "optionId": 4,
+            "text": "It raises x to the provided base.",
+            "correctAnswer": false,
+            "explanation": "It computes log, not an exponentiation."
+          }
+        ]
+      },
+      {
+        "questionId": 5,
+        "question": "What is the purpose of fmod(x, y)?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "It returns x raised to the power of y.",
+            "correctAnswer": false,
+            "explanation": "That description belongs to the pow() function."
+          },
+          {
+            "optionId": 2,
+            "text": "It returns the remainder of x divided by y.",
+            "correctAnswer": true,
+            "explanation": "Correct! fmod(x, y) returns the remainder of x divided by y."
+          },
+          {
+            "optionId": 3,
+            "text": "It computes the floor of x divided by y.",
+            "correctAnswer": false,
+            "explanation": "This operation does not provide the floor division."
+          },
+          {
+            "optionId": 4,
+            "text": "It adds x and y.",
+            "correctAnswer": false,
+            "explanation": "This function is designed for remainder operation, not addition."
+          }
+        ]
+      },
+      {
+        "questionId": 6,
+        "question": "How is the function degrees(x) used in Python?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "It converts radians to degrees.",
+            "correctAnswer": true,
+            "explanation": "Correct! degrees() takes an angle in radians and converts it to degrees."
+          },
+          {
+            "optionId": 2,
+            "text": "It converts degrees to radians.",
+            "correctAnswer": false,
+            "explanation": "That function would be radians(x) instead."
+          },
+          {
+            "optionId": 3,
+            "text": "It transforms angles for trigonometric functions.",
+            "correctAnswer": false,
+            "explanation": "It does not transform angles, just converts the units."
+          },
+          {
+            "optionId": 4,
+            "text": "It is used for temperature conversion.",
+            "correctAnswer": false,
+            "explanation": "degrees() is not related to temperature conversions."
+          }
+        ]
+      },
+      {
+        "questionId": 7,
+        "question": "What is the planned output of ceil(-3.7)?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "-3",
+            "correctAnswer": true,
+            "explanation": "Correct! ceil(-3.7) rounds towards positive infinity, yielding -3."
+          },
+          {
+            "optionId": 2,
+            "text": "-4",
+            "correctAnswer": false,
+            "explanation": "That would be the floor of -3.7, not the ceil."
+          },
+          {
+            "optionId": 3,
+            "text": "-3.7",
+            "correctAnswer": false,
+            "explanation": "ceil does not return the original number if it’s not an integer."
+          },
+          {
+            "optionId": 4,
+            "text": "0",
+            "correctAnswer": false,
+            "explanation": "Ceil function will bring it closer to 0, but not actually return it."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "quizId": 155,
+    "courseName": "CSET 1100",
+    "topic": "Lecture Content",
+    "subtopic": "Lecture 3: Data Structures and Algorithms",
+    "difficulty": "Medium",
+    "quiz": [
+      {
+        "questionId": 1,
+        "question": "What is the return value of pow(2, 3) in Python?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "6",
+            "correctAnswer": false,
+            "explanation": "The expression pow(2, 3) returns 2 raised to the power of 3, which equals 8."
+          },
+          {
+            "optionId": 2,
+            "text": "8",
+            "correctAnswer": true,
+            "explanation": "Correct! pow(2, 3) computes to 2 ** 3, which equals 8."
+          },
+          {
+            "optionId": 3,
+            "text": "9",
+            "correctAnswer": false,
+            "explanation": "The expression pow(2, 3) evaluates to 8, not 9."
+          },
+          {
+            "optionId": 4,
+            "text": "4",
+            "correctAnswer": false,
+            "explanation": "4 is the square of 2, not the result of pow(2, 3)."
+          }
+        ]
+      },
+      {
+        "questionId": 2,
+        "question": "How does the ceil function behave with negative numbers?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "It rounds up to the next integer.",
+            "correctAnswer": false,
+            "explanation": "Ceil actually rounds towards positive infinity."
+          },
+          {
+            "optionId": 2,
+            "text": "It rounds down to the nearest integer.",
+            "correctAnswer": false,
+            "explanation": "Ceil rounds up, which means it gets less negative for negative numbers."
+          },
+          {
+            "optionId": 3,
+            "text": "It returns the same number.",
+            "correctAnswer": false,
+            "explanation": "Ceil will change the number to its closest upper integer, e.g., ceil(-2.1) is -2."
+          },
+          {
+            "optionId": 4,
+            "text": "It rounds towards positive infinity.",
+            "correctAnswer": true,
+            "explanation": "Correct! For -2.1, ceil(-2.1) results in -2, the closest upper integer."
+          }
+        ]
+      },
+      {
+        "questionId": 3,
+        "question": "What does the function sqrt(16) return?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "2",
+            "correctAnswer": false,
+            "explanation": "The square root of 16 is not 2."
+          },
+          {
+            "optionId": 2,
+            "text": "4",
+            "correctAnswer": true,
+            "explanation": "Correct! sqrt(16) returns 4."
+          },
+          {
+            "optionId": 3,
+            "text": "8",
+            "correctAnswer": false,
+            "explanation": "8 is not the square root, rather 16 is 4 times 4."
+          },
+          {
+            "optionId": 4,
+            "text": "16",
+            "correctAnswer": false,
+            "explanation": "Because 16 is the argument, the return value will be less than 16 for sqrt."
+          }
+        ]
+      },
+      {
+        "questionId": 4,
+        "question": "Which of the following correctly describes the function log(x, base)?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "It calculates the logarithm of x in base 10 only.",
+            "correctAnswer": false,
+            "explanation": "log(x, base) can compute logarithms in any base, not just 10."
+          },
+          {
+            "optionId": 2,
+            "text": "It returns the natural logarithm of x if no base is provided.",
+            "correctAnswer": true,
+            "explanation": "Correct! log(x) gives the natural logarithm if the base is not specified."
+          },
+          {
+            "optionId": 3,
+            "text": "It only works for integers.",
+            "correctAnswer": false,
+            "explanation": "This function works for any real-number inputs for x."
+          },
+          {
+            "optionId": 4,
+            "text": "It raises x to the provided base.",
+            "correctAnswer": false,
+            "explanation": "It computes log, not an exponentiation."
+          }
+        ]
+      },
+      {
+        "questionId": 5,
+        "question": "What is the purpose of fmod(x, y)?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "It returns x raised to the power of y.",
+            "correctAnswer": false,
+            "explanation": "That description belongs to the pow() function."
+          },
+          {
+            "optionId": 2,
+            "text": "It returns the remainder of x divided by y.",
+            "correctAnswer": true,
+            "explanation": "Correct! fmod(x, y) returns the remainder of x divided by y."
+          },
+          {
+            "optionId": 3,
+            "text": "It computes the floor of x divided by y.",
+            "correctAnswer": false,
+            "explanation": "This operation does not provide the floor division."
+          },
+          {
+            "optionId": 4,
+            "text": "It adds x and y.",
+            "correctAnswer": false,
+            "explanation": "This function is designed for remainder operation, not addition."
+          }
+        ]
+      },
+      {
+        "questionId": 6,
+        "question": "How is the function degrees(x) used in Python?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "It converts radians to degrees.",
+            "correctAnswer": true,
+            "explanation": "Correct! degrees() takes an angle in radians and converts it to degrees."
+          },
+          {
+            "optionId": 2,
+            "text": "It converts degrees to radians.",
+            "correctAnswer": false,
+            "explanation": "That function would be radians(x) instead."
+          },
+          {
+            "optionId": 3,
+            "text": "It transforms angles for trigonometric functions.",
+            "correctAnswer": false,
+            "explanation": "It does not transform angles, just converts the units."
+          },
+          {
+            "optionId": 4,
+            "text": "It is used for temperature conversion.",
+            "correctAnswer": false,
+            "explanation": "degrees() is not related to temperature conversions."
+          }
+        ]
+      },
+      {
+        "questionId": 7,
+        "question": "What is the planned output of ceil(-3.7)?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "-3",
+            "correctAnswer": true,
+            "explanation": "Correct! ceil(-3.7) rounds towards positive infinity, yielding -3."
+          },
+          {
+            "optionId": 2,
+            "text": "-4",
+            "correctAnswer": false,
+            "explanation": "That would be the floor of -3.7, not the ceil."
+          },
+          {
+            "optionId": 3,
+            "text": "-3.7",
+            "correctAnswer": false,
+            "explanation": "ceil does not return the original number if it’s not an integer."
+          },
+          {
+            "optionId": 4,
+            "text": "0",
+            "correctAnswer": false,
+            "explanation": "Ceil function will bring it closer to 0, but not actually return it."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "quizId": 30,
+    "courseName": "CSET 1100",
+    "topic": "Homework",
+    "subtopic": "homework-1",
+    "difficulty": "Easy",
+    "quiz": [
+      {
+        "questionId": 1,
+        "question": "What is the return value of pow(2, 3) in Python?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "6",
+            "correctAnswer": false,
+            "explanation": "The expression pow(2, 3) returns 2 raised to the power of 3, which equals 8."
+          },
+          {
+            "optionId": 2,
+            "text": "8",
+            "correctAnswer": true,
+            "explanation": "Correct! pow(2, 3) computes to 2 ** 3, which equals 8."
+          },
+          {
+            "optionId": 3,
+            "text": "9",
+            "correctAnswer": false,
+            "explanation": "The expression pow(2, 3) evaluates to 8, not 9."
+          },
+          {
+            "optionId": 4,
+            "text": "4",
+            "correctAnswer": false,
+            "explanation": "4 is the square of 2, not the result of pow(2, 3)."
+          }
+        ]
+      },
+      {
+        "questionId": 2,
+        "question": "How does the ceil function behave with negative numbers?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "It rounds up to the next integer.",
+            "correctAnswer": false,
+            "explanation": "Ceil actually rounds towards positive infinity."
+          },
+          {
+            "optionId": 2,
+            "text": "It rounds down to the nearest integer.",
+            "correctAnswer": false,
+            "explanation": "Ceil rounds up, which means it gets less negative for negative numbers."
+          },
+          {
+            "optionId": 3,
+            "text": "It returns the same number.",
+            "correctAnswer": false,
+            "explanation": "Ceil will change the number to its closest upper integer, e.g., ceil(-2.1) is -2."
+          },
+          {
+            "optionId": 4,
+            "text": "It rounds towards positive infinity.",
+            "correctAnswer": true,
+            "explanation": "Correct! For -2.1, ceil(-2.1) results in -2, the closest upper integer."
+          }
+        ]
+      },
+      {
+        "questionId": 3,
+        "question": "What does the function sqrt(16) return?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "2",
+            "correctAnswer": false,
+            "explanation": "The square root of 16 is not 2."
+          },
+          {
+            "optionId": 2,
+            "text": "4",
+            "correctAnswer": true,
+            "explanation": "Correct! sqrt(16) returns 4."
+          },
+          {
+            "optionId": 3,
+            "text": "8",
+            "correctAnswer": false,
+            "explanation": "8 is not the square root, rather 16 is 4 times 4."
+          },
+          {
+            "optionId": 4,
+            "text": "16",
+            "correctAnswer": false,
+            "explanation": "Because 16 is the argument, the return value will be less than 16 for sqrt."
+          }
+        ]
+      },
+      {
+        "questionId": 4,
+        "question": "Which of the following correctly describes the function log(x, base)?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "It calculates the logarithm of x in base 10 only.",
+            "correctAnswer": false,
+            "explanation": "log(x, base) can compute logarithms in any base, not just 10."
+          },
+          {
+            "optionId": 2,
+            "text": "It returns the natural logarithm of x if no base is provided.",
+            "correctAnswer": true,
+            "explanation": "Correct! log(x) gives the natural logarithm if the base is not specified."
+          },
+          {
+            "optionId": 3,
+            "text": "It only works for integers.",
+            "correctAnswer": false,
+            "explanation": "This function works for any real-number inputs for x."
+          },
+          {
+            "optionId": 4,
+            "text": "It raises x to the provided base.",
+            "correctAnswer": false,
+            "explanation": "It computes log, not an exponentiation."
+          }
+        ]
+      },
+      {
+        "questionId": 5,
+        "question": "What is the purpose of fmod(x, y)?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "It returns x raised to the power of y.",
+            "correctAnswer": false,
+            "explanation": "That description belongs to the pow() function."
+          },
+          {
+            "optionId": 2,
+            "text": "It returns the remainder of x divided by y.",
+            "correctAnswer": true,
+            "explanation": "Correct! fmod(x, y) returns the remainder of x divided by y."
+          },
+          {
+            "optionId": 3,
+            "text": "It computes the floor of x divided by y.",
+            "correctAnswer": false,
+            "explanation": "This operation does not provide the floor division."
+          },
+          {
+            "optionId": 4,
+            "text": "It adds x and y.",
+            "correctAnswer": false,
+            "explanation": "This function is designed for remainder operation, not addition."
+          }
+        ]
+      },
+      {
+        "questionId": 6,
+        "question": "How is the function degrees(x) used in Python?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "It converts radians to degrees.",
+            "correctAnswer": true,
+            "explanation": "Correct! degrees() takes an angle in radians and converts it to degrees."
+          },
+          {
+            "optionId": 2,
+            "text": "It converts degrees to radians.",
+            "correctAnswer": false,
+            "explanation": "That function would be radians(x) instead."
+          },
+          {
+            "optionId": 3,
+            "text": "It transforms angles for trigonometric functions.",
+            "correctAnswer": false,
+            "explanation": "It does not transform angles, just converts the units."
+          },
+          {
+            "optionId": 4,
+            "text": "It is used for temperature conversion.",
+            "correctAnswer": false,
+            "explanation": "degrees() is not related to temperature conversions."
+          }
+        ]
+      },
+      {
+        "questionId": 7,
+        "question": "What is the planned output of ceil(-3.7)?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "-3",
+            "correctAnswer": true,
+            "explanation": "Correct! ceil(-3.7) rounds towards positive infinity, yielding -3."
+          },
+          {
+            "optionId": 2,
+            "text": "-4",
+            "correctAnswer": false,
+            "explanation": "That would be the floor of -3.7, not the ceil."
+          },
+          {
+            "optionId": 3,
+            "text": "-3.7",
+            "correctAnswer": false,
+            "explanation": "ceil does not return the original number if it’s not an integer."
+          },
+          {
+            "optionId": 4,
+            "text": "0",
+            "correctAnswer": false,
+            "explanation": "Ceil function will bring it closer to 0, but not actually return it."
           }
         ]
       }

@@ -61,22 +61,25 @@ export default function Component() {
   const [timeLeft, setTimeLeft] = useState(0);
   const [loading, setLoading] = useState(false);
 
+  // New state variable to track the submission/loading state when submitting the quiz
+  const [submittingQuiz, setSubmittingQuiz] = useState(false);
+
   const courseId = 1;
   const course = {
     id: 1,
     title: "CSET 1100: Introduction to Computer Science",
-    term: "Fall 2023",
-    instructor: "Dr. Jane Smith",
+    term: "Fall 2024",
+    instructor: "Professor Robert Langenderfer",
   };
 
   const lectureVideos = [
     {
       id: 1,
       title: "Introduction to Programming Concepts",
-      duration: "45:00",
+      duration: "20:00",
       url: "https://example.com/video1",
       transcript:
-        "This is the transcript for Introduction to Programming Concepts...",
+        "Welcome to CSET 1100: Introduction to Computer Science! In this course, we’ll explore the fundamental concepts of computer science and programming. Computers are an essential part of our daily lives, and understanding how they work is crucial. At the heart of every computer is a processor that follows instructions to perform tasks. These instructions, called programs, are written by programmers like you. Programming is the art of writing these instructions in a way that computers can understand and execute.Today, we’ll begin by discussing the basics of programming. Programming is simply the process of giving a computer a set of instructions to solve a problem. These instructions can range from simple calculations to complex tasks like running websites or analyzing data. To help us with this, we’ll be using Python, which is a powerful and easy-to-learn programming language. Python’s simplicity makes it a great choice for beginners, and it will be the language we use throughout this course. As we move forward, we’ll explore some key concepts that form the foundation of programming, such as variables and control flow. A variable is like a container that stores data, such as numbers or text. We’ll also learn how to control the flow of a program using conditionals and loops. Conditionals allow us to make decisions in a program (like checking if a number is positive or negative), while loops let us repeat tasks multiple times (such as counting or processing data). In this course, you’ll also learn about algorithms, which are step-by-step procedures for solving problems. For example, an algorithm might tell a computer how to sort a list of numbers or how to search for a specific word in a document. The goal of programming is not just to write code that works, but to write code that is efficient, readable, and easy to maintain. You’ll develop problem-solving skills as we work through different examples and projects together. By the end of this course, you should have a solid understanding of basic programming concepts and be able to write simple Python programs. The skills you learn here will serve as the foundation for more advanced topics in computer science, such as data structures, algorithms, and software development. I encourage you to practice regularly, ask questions, and enjoy the process of learning to program. Let’s dive in and get started with this exciting journey into the world of computer science!",
     },
     {
       id: 2,
@@ -100,21 +103,21 @@ export default function Component() {
       title: "Week 1: CS Fundamentals",
       lastModified: "2023-09-05",
       content:
-        "Introduction to computer science and its core principles. Topics covered: algorithms, data structures, and computational thinking.",
+        'CSET 1100 introduces the fundamentals of programming and computing, focusing on the basics of Python. Key points include understanding computer components like the CPU (the "brain" of the computer) and memory (RAM), which stores program instructions temporarily. Python, a versatile, object-oriented programming language, was highlighted for its simplicity and utility in various applications, from NASA to financial systems. Programming involves writing code in languages like Python, which is interpreted line by line, unlike compiled languages like C++. The importance of proper coding style, including comments, indentation, and spacing, was emphasized to ensure clarity and maintainability. Errors were categorized as syntax, runtime, and logic, with examples illustrating their impact on program functionality.',
     },
     {
       id: 2,
-      title: "Week 2: Algorithms Basics",
+      title: "Week 2: Introduction to programming languages",
       lastModified: "2023-09-12",
       content:
-        "Basic algorithm concepts including time complexity, space complexity, and Big O notation. Examples of common algorithms like binary search and bubble sort.",
+        "We explored the fundamentals of programming languages, focusing on their levels, paradigms, and development cycles. Key concepts included how programming languages allow humans to communicate with computers through symbols and instructions, with examples ranging from machine language (binary) to high-level languages like Python. Programming paradigms were discussed, including imperative, object-oriented, functional, and logic-based approaches, highlighting their use cases and advantages. The distinction between compiled and interpreted languages was emphasized, with compilers translating entire code at once and interpreters executing it line by line. The software development lifecycle was outlined, introducing traditional and modern iterative methods, such as prototype-based development, which allows faster testing and user feedback for improved outcomes.",
     },
     {
       id: 3,
-      title: "Week 3: Object-Oriented Programming",
+      title: "Week 3: Introduction to Programming in Python",
       lastModified: "2023-09-19",
       content:
-        "Introduction to OOP principles: encapsulation, inheritance, and polymorphism. Examples in Java and Python to illustrate these concepts.",
+        "This lecture introduced elementary programming concepts, focusing on primitive data types, variables, and operations. Key points include using variables to store data (e.g., radius = 20) and performing computations like calculating the area of a circle using area = radius * radius * 3.14159. The lecture also emphasized the use of input functions (input()) to collect user data and introduced Python operators (+, -, *, /, %, **). Identifiers were defined as names for variables, which must follow rules such as starting with a letter or underscore. The importance of constants for fixed values and augmented assignment operators (e.g., x += 1) was highlighted. Finally, the software development process, from requirement analysis to testing and deployment, was discussed, with examples like calculating loan payments and computing distances.",
     },
   ]);
 
@@ -159,6 +162,24 @@ export default function Component() {
       filename: "lecture3_data_structures_algorithms.pdf",
       url: "https://example.com/pdfs/lecture3_data_structures_algorithms.pdf",
     },
+    {
+      id: 4,
+      title: "Lecture 4: Game programming and turtle graphics",
+      filename: "lecture4_game_programming_and_turtle_graphics.pdf",
+      url: "https://example.com/pdfs/lecture3_data_structures_algorithms.pdf",
+    },
+    {
+      id: 5,
+      title: "Lecture 5: Math operators in python",
+      filename: "lecture5_math_operators_in_python.pdf",
+      url: "https://example.com/pdfs/lecture3_data_structures_algorithms.pdf",
+    },
+    {
+      id: 6,
+      title: "Lecture 6: Expressions in python",
+      filename: "lecture6_expressions_in_python.pdf",
+      url: "https://example.com/pdfs/lecture3_data_structures_algorithms.pdf",
+    },
   ];
 
   useEffect(() => {
@@ -192,26 +213,47 @@ export default function Component() {
   const handleGenerateQuiz = async () => {
     try {
       setLoading(true);
+      let contentToSend = "";
+      if (quizMaterial === "Notes") {
+        // quizContent looks like "note-1" for note with id = 1
+        const noteId = parseInt(quizContent.split("-")[1], 10);
+        const selectedNoteObj = notes.find((n) => n.id === noteId);
+        if (selectedNoteObj) {
+          contentToSend = selectedNoteObj.content;
+        }
+      } else if (quizMaterial === "Lecture Videos") {
+        // quizContent looks like "lecture-1" for video with id = 1
+        const videoId = parseInt(quizContent.split("-")[1], 10);
+        const selectedVideo = lectureVideos.find((v) => v.id === videoId);
+        if (selectedVideo) {
+          contentToSend = selectedVideo.transcript;
+        }
+      } else {
+        contentToSend = quizContent;
+      }
+
       const response = await fetch("http://localhost:5001/generate-quiz", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          pdfName: quizContent,
+          pdfName:
+            quizMaterial === "Lecture Videos" || quizMaterial === "Notes"
+              ? contentToSend
+              : quizContent,
           difficultyLevel: quizDifficulty,
           quizMaterial: quizMaterial,
           specificContent: quizContent,
         }),
       });
+
       if (!response.ok) {
         setLoading(false);
         throw new Error("Failed to generate quiz");
       }
       const data = await response.json();
-      //setGeneratedQuiz(data);
       setIsQuizDialogOpen(false);
-      //setSelectedQuiz(data);
       fetchQuizzes();
       setLoading(false);
     } catch (error) {
@@ -271,7 +313,7 @@ export default function Component() {
     setIsTakingQuiz(true);
     setQuizAnswers({});
     setQuizResults(null);
-    let totalTime = 300;
+    let totalTime = 600;
     if (selectedQuiz.difficulty === "medium") {
       totalTime = 420;
     } else if (selectedQuiz.difficulty === "hard") {
@@ -287,7 +329,11 @@ export default function Component() {
     });
   };
 
-  const handleSubmitQuiz = () => {
+  const handleSubmitQuiz = async () => {
+    // Stop the quiz timer and show a loader
+    setIsTakingQuiz(false);
+    setSubmittingQuiz(true);
+
     let correctAnswers = 0;
     selectedQuiz.quiz.forEach((q) => {
       const userAnswer = quizAnswers[q.questionId];
@@ -299,19 +345,60 @@ export default function Component() {
     const score = ((correctAnswers / selectedQuiz.quiz.length) * 100).toFixed(
       2
     );
-    const results = {
-      score,
-      totalQuestions: selectedQuiz.quiz.length,
-      correctAnswers,
-      answers: quizAnswers,
-      quiz: selectedQuiz,
-    };
-    setQuizResults(results);
-    setIsTakingQuiz(false);
-    localStorage.setItem(
-      `quizResults-${selectedQuiz.quizId}`,
-      JSON.stringify(results)
-    );
+
+    // Now fetch feedback from the backend
+    try {
+      const response = await fetch("http://localhost:5001/get-quiz-feedback", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          quizId: selectedQuiz.quizId,
+          quiz: selectedQuiz,
+          answersSelected: quizAnswers,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to get quiz feedback");
+      }
+
+      const data = await response.json();
+      const feedback = data.feedback || "No feedback provided.";
+
+      const results = {
+        score,
+        totalQuestions: selectedQuiz.quiz.length,
+        correctAnswers,
+        answers: quizAnswers,
+        quiz: selectedQuiz,
+        feedback: feedback,
+      };
+      setQuizResults(results);
+      localStorage.setItem(
+        `quizResults-${selectedQuiz.quizId}`,
+        JSON.stringify(results)
+      );
+    } catch (error) {
+      console.error("Error fetching quiz feedback:", error);
+      // Even if feedback fails, show partial results
+      const results = {
+        score,
+        totalQuestions: selectedQuiz.quiz.length,
+        correctAnswers,
+        answers: quizAnswers,
+        quiz: selectedQuiz,
+        feedback: "No feedback available due to an error.",
+      };
+      setQuizResults(results);
+      localStorage.setItem(
+        `quizResults-${selectedQuiz.quizId}`,
+        JSON.stringify(results)
+      );
+    } finally {
+      setSubmittingQuiz(false);
+    }
   };
 
   return (
@@ -382,7 +469,7 @@ export default function Component() {
                 onClick={() => setIsQuizDialogOpen(true)}
                 className="bg-blue-600 hover:bg-blue-700"
               >
-                <FileQuestion className="mr-2 h-4 w-4" /> Generate New Quiz
+                Generate New Quiz
               </Button>
             </div>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -421,7 +508,7 @@ export default function Component() {
                   </CardHeader>
                   <CardContent>
                     <Button variant="outline" className="w-full">
-                      <Play className="mr-2 h-4 w-4" /> Watch Lecture
+                      View Transcript
                     </Button>
                   </CardContent>
                 </Card>
@@ -439,11 +526,11 @@ export default function Component() {
                   </CardHeader>
                   <CardContent>
                     {hw.submitted ? (
-                      <p className="text-blue-400">
+                      <p className="text-blue-500">
                         Submitted (Grade: {hw.grade})
                       </p>
                     ) : (
-                      <p className="text-yellow-400">Not Submitted</p>
+                      <p className="text-red-500">Not Submitted</p>
                     )}
                   </CardContent>
                   <CardFooter>
@@ -607,10 +694,7 @@ export default function Component() {
           </DialogHeader>
           <div className="space-y-4">
             <div>
-              <label
-                htmlFor="noteTitle"
-                className="block text-sm font-medium text-gray-300"
-              >
+              <label htmlFor="noteTitle" className="block text-sm font-medium ">
                 Note Title
               </label>
               <Input
@@ -625,7 +709,7 @@ export default function Component() {
             <div>
               <label
                 htmlFor="noteContent"
-                className="block text-sm font-medium text-gray-300"
+                className="block text-sm font-medium"
               >
                 Note Content
               </label>
@@ -661,7 +745,12 @@ export default function Component() {
               {selectedQuiz?.difficulty}
             </DialogDescription>
           </DialogHeader>
-          {isTakingQuiz ? (
+          {submittingQuiz ? (
+            <div className="flex flex-col items-center justify-center space-y-4 py-10">
+              <Loader2 className="h-10 w-10 animate-spin" />
+              <p className="">Submitting your quiz and fetching feedback...</p>
+            </div>
+          ) : isTakingQuiz ? (
             <div className="space-y-4">
               <div className="flex justify-between items-center">
                 <p>
@@ -709,6 +798,9 @@ export default function Component() {
               <h3 className="text-xl font-semibold">
                 Your Score: {quizResults.score}%
               </h3>
+              <p className="text-sm bg-gray-300 p-3 rounded-lg">
+                Feedback: {quizResults.feedback}
+              </p>
               {selectedQuiz?.quiz.map((q, index) => {
                 const userAnswer = quizResults.answers[q.questionId];
                 const correctOption = q.options.find((o) => o.correctAnswer);
@@ -721,28 +813,37 @@ export default function Component() {
                       {index + 1}. {q.question}
                     </p>
                     <div className="space-y-2">
-                      {q.options.map((option) => (
-                        <div
-                          key={option.optionId}
-                          className={`p-2 rounded-md ${
-                            option.optionId.toString() === userAnswer
-                              ? option.correctAnswer
-                                ? "bg-green-600"
-                                : "bg-red-600"
-                              : ""
-                          } ${option.correctAnswer && "bg-green-600"}`}
-                        >
-                          <p>
-                            {option.text}{" "}
-                            {option.correctAnswer && (
-                              <span className="text-green-600">(Correct)</span>
-                            )}
-                          </p>
-                          <p className="text-sm text-black">
-                            Explanation: {option.explanation}
-                          </p>
-                        </div>
-                      ))}
+                      {q.options.map((option) => {
+                        const isUserAnswer =
+                          option.optionId.toString() === userAnswer;
+                        const isCorrect = option.correctAnswer;
+                        let bgClass = "";
+                        if (isUserAnswer && isCorrect) {
+                          bgClass = "bg-green-600";
+                        } else if (isUserAnswer && !isCorrect) {
+                          bgClass = "bg-red-600";
+                        } else if (isCorrect) {
+                          bgClass = "bg-green-600";
+                        }
+                        return (
+                          <div
+                            key={option.optionId}
+                            className={`p-2 rounded-md ${bgClass}`}
+                          >
+                            <p>
+                              {option.text}{" "}
+                              {option.correctAnswer && (
+                                <span className="text-green-600">
+                                  (Correct)
+                                </span>
+                              )}
+                            </p>
+                            <p className="text-sm text-black">
+                              Explanation: {option.explanation}
+                            </p>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 );
@@ -774,15 +875,8 @@ export default function Component() {
             </DialogDescription>
           </DialogHeader>
           <div className="space-y-4">
-            <div className="aspect-video bg-gray-700 flex items-center justify-center">
-              <Play className="w-12 h-12" />
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Transcript</h3>
-              <p className="text-sm text-gray-300">
-                {selectedLecture?.transcript}
-              </p>
-            </div>
+            <h3 className="text-lg font-semibold mb-2">Transcript</h3>
+            <p className="text-sm ">{selectedLecture?.transcript}</p>
           </div>
         </DialogContent>
       </Dialog>
@@ -800,7 +894,7 @@ export default function Component() {
             </DialogDescription>
           </DialogHeader>
           <div className="mt-4">
-            <p className="text-gray-300">{selectedNote?.content}</p>
+            <p className="">{selectedNote?.content}</p>
           </div>
         </DialogContent>
       </Dialog>
@@ -823,12 +917,12 @@ export default function Component() {
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-semibold mb-2">Question</h3>
-              <p className="text-gray-300">{selectedHomework?.question}</p>
+              <p className="">{selectedHomework?.question}</p>
             </div>
             {selectedHomework?.submitted && (
               <div>
                 <h3 className="text-lg font-semibold mb-2">Your Submission</h3>
-                <pre className="bg-gray-700 p-4 rounded-lg overflow-x-auto">
+                <pre className="bg-gray-300 p-4 rounded-lg overflow-x-auto">
                   <code className="text-sm">
                     {selectedHomework?.submission}
                   </code>
