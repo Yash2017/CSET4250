@@ -80,7 +80,7 @@ export default function Component() {
     {
       id: 1,
       title: "Introduction to Programming Concepts",
-      duration: "20:00",
+      duration: "35:41",
       url: "https://example.com/video1",
       transcript:
         "Welcome to CSET 1100: Introduction to Computer Science! ... (full transcript)",
@@ -88,14 +88,14 @@ export default function Component() {
     {
       id: 2,
       title: "Data Types and Variables",
-      duration: "50:30",
+      duration: "2:40",
       url: "https://example.com/video2",
       transcript: "This is the transcript for Data Types and Variables...",
     },
     {
       id: 3,
       title: "Control Structures",
-      duration: "55:15",
+      duration: "38:01",
       url: "https://example.com/video3",
       transcript: "This is the transcript for Control Structures...",
     },
