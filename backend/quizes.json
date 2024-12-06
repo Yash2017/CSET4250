@@ -1093,5 +1093,134 @@
         ]
       }
     ]
+  },
+  {
+    "quizId": 99,
+    "courseName": "CSET 1100",
+    "topic": "Lecture Videos",
+    "subtopic": "lecture-2",
+    "difficulty": "Easy",
+    "quiz": [
+      {
+        "questionId": 1,
+        "question": "What are syntax and semantics in programming?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "Syntax refers to the rules of language, while semantics refers to the meaning of commands.",
+            "correctAnswer": true,
+            "explanation": "Syntax rules must be followed when creating programs, whereas semantics defines what those commands mean."
+          },
+          {
+            "optionId": 2,
+            "text": "Syntax is the meaning of commands, and semantics are the programming rules.",
+            "correctAnswer": false,
+            "explanation": "This is incorrect; syntax refers to rules, and semantics refers to meaning."
+          },
+          {
+            "optionId": 3,
+            "text": "Syntax and semantics are unrelated concepts in programming.",
+            "correctAnswer": false,
+            "explanation": "Syntax and semantics are deeply related as syntax helps structure commands while semantics gives them meaning."
+          },
+          {
+            "optionId": 4,
+            "text": "Only semantics is important when writing a program.",
+            "correctAnswer": false,
+            "explanation": "Both syntax and semantics are important in programming for proper functionality."
+          }
+        ]
+      },
+      {
+        "questionId": 2,
+        "question": "What does a lexime represent in programming?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "The lowest form of entity in a program.",
+            "correctAnswer": true,
+            "explanation": "A lexime is the smallest unit of a program, which helps in the compilation process."
+          },
+          {
+            "optionId": 2,
+            "text": "A group of statements.",
+            "correctAnswer": false,
+            "explanation": "Leximes are not groups of statements; they are individual units."
+          },
+          {
+            "optionId": 3,
+            "text": "A type of syntax error.",
+            "correctAnswer": false,
+            "explanation": "Leximes are related to the structure of commands, not errors."
+          },
+          {
+            "optionId": 4,
+            "text": "An abstract concept without physical representation.",
+            "correctAnswer": false,
+            "explanation": "Leximes are tangible units in programming, associated with syntax."
+          }
+        ]
+      },
+      {
+        "questionId": 3,
+        "question": "What is the purpose of a syntax analyzer in a compiler?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "To validate the syntax of commands and identify errors.",
+            "correctAnswer": true,
+            "explanation": "The syntax analyzer checks for adherence to syntax rules and detects syntax errors."
+          },
+          {
+            "optionId": 2,
+            "text": "To execute the program directly.",
+            "correctAnswer": false,
+            "explanation": "The syntax analyzer does not execute programs; it only checks syntax."
+          },
+          {
+            "optionId": 3,
+            "text": "To compile without checking for errors.",
+            "correctAnswer": false,
+            "explanation": "Compilers must check for errors, including syntax errors, before executing."
+          },
+          {
+            "optionId": 4,
+            "text": "To enhance the performance of the code.",
+            "correctAnswer": false,
+            "explanation": "The performance enhancement is typically not a responsibility of the syntax analyzer."
+          }
+        ]
+      },
+      {
+        "questionId": 4,
+        "question": "What does BNF stand for?",
+        "options": [
+          {
+            "optionId": 1,
+            "text": "Backus-Naur Form.",
+            "correctAnswer": true,
+            "explanation": "BNF stands for Backus-Naur Form, a notation used to express grammar of programming languages."
+          },
+          {
+            "optionId": 2,
+            "text": "Binary Numerical Function.",
+            "correctAnswer": false,
+            "explanation": "This description is incorrect; BNF refers to the syntax of programming languages, not functions."
+          },
+          {
+            "optionId": 3,
+            "text": "Basic Numeric Format.",
+            "correctAnswer": false,
+            "explanation": "BNF does not relate to numeric formats; it pertains to grammar in programming."
+          },
+          {
+            "optionId": 4,
+            "text": "Base Notation for Functions.",
+            "correctAnswer": false,
+            "explanation": "BNF specifically describes language syntax, not function notation."
+          }
+        ]
+      }
+    ]
   }
 ]

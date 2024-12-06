@@ -64,6 +64,10 @@ export default function Component() {
   // New state variable to track the submission/loading state when submitting the quiz
   const [submittingQuiz, setSubmittingQuiz] = useState(false);
 
+  // New states for transcript loading
+  const [transcriptLoading, setTranscriptLoading] = useState(false);
+  const [transcriptData, setTranscriptData] = useState(null);
+
   const courseId = 1;
   const course = {
     id: 1,
@@ -79,7 +83,7 @@ export default function Component() {
       duration: "20:00",
       url: "https://example.com/video1",
       transcript:
-        "Welcome to CSET 1100: Introduction to Computer Science! In this course, we’ll explore the fundamental concepts of computer science and programming. Computers are an essential part of our daily lives, and understanding how they work is crucial. At the heart of every computer is a processor that follows instructions to perform tasks. These instructions, called programs, are written by programmers like you. Programming is the art of writing these instructions in a way that computers can understand and execute.Today, we’ll begin by discussing the basics of programming. Programming is simply the process of giving a computer a set of instructions to solve a problem. These instructions can range from simple calculations to complex tasks like running websites or analyzing data. To help us with this, we’ll be using Python, which is a powerful and easy-to-learn programming language. Python’s simplicity makes it a great choice for beginners, and it will be the language we use throughout this course. As we move forward, we’ll explore some key concepts that form the foundation of programming, such as variables and control flow. A variable is like a container that stores data, such as numbers or text. We’ll also learn how to control the flow of a program using conditionals and loops. Conditionals allow us to make decisions in a program (like checking if a number is positive or negative), while loops let us repeat tasks multiple times (such as counting or processing data). In this course, you’ll also learn about algorithms, which are step-by-step procedures for solving problems. For example, an algorithm might tell a computer how to sort a list of numbers or how to search for a specific word in a document. The goal of programming is not just to write code that works, but to write code that is efficient, readable, and easy to maintain. You’ll develop problem-solving skills as we work through different examples and projects together. By the end of this course, you should have a solid understanding of basic programming concepts and be able to write simple Python programs. The skills you learn here will serve as the foundation for more advanced topics in computer science, such as data structures, algorithms, and software development. I encourage you to practice regularly, ask questions, and enjoy the process of learning to program. Let’s dive in and get started with this exciting journey into the world of computer science!",
+        "Welcome to CSET 1100: Introduction to Computer Science! ... (full transcript)",
     },
     {
       id: 2,
@@ -103,21 +107,21 @@ export default function Component() {
       title: "Week 1: CS Fundamentals",
       lastModified: "2023-09-05",
       content:
-        'CSET 1100 introduces the fundamentals of programming and computing, focusing on the basics of Python. Key points include understanding computer components like the CPU (the "brain" of the computer) and memory (RAM), which stores program instructions temporarily. Python, a versatile, object-oriented programming language, was highlighted for its simplicity and utility in various applications, from NASA to financial systems. Programming involves writing code in languages like Python, which is interpreted line by line, unlike compiled languages like C++. The importance of proper coding style, including comments, indentation, and spacing, was emphasized to ensure clarity and maintainability. Errors were categorized as syntax, runtime, and logic, with examples illustrating their impact on program functionality.',
+        "CSET 1100 introduces the fundamentals of programming and computing, focusing on the basics of Python. Key points include ...",
     },
     {
       id: 2,
       title: "Week 2: Introduction to programming languages",
       lastModified: "2023-09-12",
       content:
-        "We explored the fundamentals of programming languages, focusing on their levels, paradigms, and development cycles. Key concepts included how programming languages allow humans to communicate with computers through symbols and instructions, with examples ranging from machine language (binary) to high-level languages like Python. Programming paradigms were discussed, including imperative, object-oriented, functional, and logic-based approaches, highlighting their use cases and advantages. The distinction between compiled and interpreted languages was emphasized, with compilers translating entire code at once and interpreters executing it line by line. The software development lifecycle was outlined, introducing traditional and modern iterative methods, such as prototype-based development, which allows faster testing and user feedback for improved outcomes.",
+        "We explored the fundamentals of programming languages, focusing on their levels ...",
     },
     {
       id: 3,
       title: "Week 3: Introduction to Programming in Python",
       lastModified: "2023-09-19",
       content:
-        "This lecture introduced elementary programming concepts, focusing on primitive data types, variables, and operations. Key points include using variables to store data (e.g., radius = 20) and performing computations like calculating the area of a circle using area = radius * radius * 3.14159. The lecture also emphasized the use of input functions (input()) to collect user data and introduced Python operators (+, -, *, /, %, **). Identifiers were defined as names for variables, which must follow rules such as starting with a letter or underscore. The importance of constants for fixed values and augmented assignment operators (e.g., x += 1) was highlighted. Finally, the software development process, from requirement analysis to testing and deployment, was discussed, with examples like calculating loan payments and computing distances.",
+        "This lecture introduced elementary programming concepts, focusing on primitive data types, variables, and operations ...",
     },
   ]);
 
@@ -162,24 +166,6 @@ export default function Component() {
       filename: "lecture3_data_structures_algorithms.pdf",
       url: "https://example.com/pdfs/lecture3_data_structures_algorithms.pdf",
     },
-    {
-      id: 4,
-      title: "Lecture 4: Game programming and turtle graphics",
-      filename: "lecture4_game_programming_and_turtle_graphics.pdf",
-      url: "https://example.com/pdfs/lecture3_data_structures_algorithms.pdf",
-    },
-    {
-      id: 5,
-      title: "Lecture 5: Math operators in python",
-      filename: "lecture5_math_operators_in_python.pdf",
-      url: "https://example.com/pdfs/lecture3_data_structures_algorithms.pdf",
-    },
-    {
-      id: 6,
-      title: "Lecture 6: Expressions in python",
-      filename: "lecture6_expressions_in_python.pdf",
-      url: "https://example.com/pdfs/lecture3_data_structures_algorithms.pdf",
-    },
   ];
 
   useEffect(() => {
@@ -213,6 +199,7 @@ export default function Component() {
   const handleGenerateQuiz = async () => {
     try {
       setLoading(true);
+
       let contentToSend = "";
       if (quizMaterial === "Notes") {
         // quizContent looks like "note-1" for note with id = 1
@@ -226,7 +213,7 @@ export default function Component() {
         const videoId = parseInt(quizContent.split("-")[1], 10);
         const selectedVideo = lectureVideos.find((v) => v.id === videoId);
         if (selectedVideo) {
-          contentToSend = selectedVideo.transcript;
+          contentToSend = String(selectedVideo.id);
         }
       } else {
         contentToSend = quizContent;
@@ -287,8 +274,27 @@ export default function Component() {
     }
   };
 
-  const openLectureDialog = (lecture) => {
+  const openLectureDialog = async (lecture) => {
+    // When user clicks "View Transcript"
     setSelectedLecture(lecture);
+    setTranscriptLoading(true);
+    setTranscriptData(null);
+
+    try {
+      const response = await fetch(
+        `http://localhost:5001/transcribe-audio/${lecture.id}`
+      );
+      if (!response.ok) {
+        throw new Error("Failed to fetch transcript");
+      }
+      const data = await response.json();
+      setTranscriptData(data.transcription);
+    } catch (error) {
+      console.error("Error fetching transcript:", error);
+      setTranscriptData("Error fetching transcript. Please try again later.");
+    } finally {
+      setTranscriptLoading(false);
+    }
   };
 
   const openFullNoteDialog = (note) => {
@@ -313,7 +319,7 @@ export default function Component() {
     setIsTakingQuiz(true);
     setQuizAnswers({});
     setQuizResults(null);
-    let totalTime = 600;
+    let totalTime = 300;
     if (selectedQuiz.difficulty === "medium") {
       totalTime = 420;
     } else if (selectedQuiz.difficulty === "hard") {
@@ -526,11 +532,11 @@ export default function Component() {
                   </CardHeader>
                   <CardContent>
                     {hw.submitted ? (
-                      <p className="text-blue-500">
+                      <p className="text-blue-400">
                         Submitted (Grade: {hw.grade})
                       </p>
                     ) : (
-                      <p className="text-red-500">Not Submitted</p>
+                      <p className="text-yellow-400">Not Submitted</p>
                     )}
                   </CardContent>
                   <CardFooter>
@@ -874,9 +880,16 @@ export default function Component() {
               Duration: {selectedLecture?.duration}
             </DialogDescription>
           </DialogHeader>
-          <div className="space-y-4">
+          <div className="space-y-4 overflow-auto max-h-80">
             <h3 className="text-lg font-semibold mb-2">Transcript</h3>
-            <p className="text-sm ">{selectedLecture?.transcript}</p>
+            {transcriptLoading ? (
+              <div className="flex items-center space-x-2">
+                <Loader2 className="h-6 w-6 animate-spin" />
+                <p>Generating transcript...</p>
+              </div>
+            ) : (
+              <p className="text-sm">{transcriptData}</p>
+            )}
           </div>
         </DialogContent>
       </Dialog>
@@ -917,12 +930,12 @@ export default function Component() {
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-semibold mb-2">Question</h3>
-              <p className="">{selectedHomework?.question}</p>
+              <p className="text-gray-300">{selectedHomework?.question}</p>
             </div>
             {selectedHomework?.submitted && (
               <div>
                 <h3 className="text-lg font-semibold mb-2">Your Submission</h3>
-                <pre className="bg-gray-300 p-4 rounded-lg overflow-x-auto">
+                <pre className="bg-gray-700 p-4 rounded-lg overflow-x-auto">
                   <code className="text-sm">
                     {selectedHomework?.submission}
                   </code>

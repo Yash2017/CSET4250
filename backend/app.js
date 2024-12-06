@@ -144,7 +144,9 @@ app.post("/generate-quiz", async (req, res) => {
       instructionsToUse = instructions_assistant_notes;
       userPrompt = `Below are the notes content you should base your quiz on:\n\n${pdfName}\n\nDifficulty: ${difficultyLevel}`;
     } else if (quizMaterial == "Lecture Videos") {
-      userPrompt = `This is the video transcript: ${pdfName} and this is the difficulty level: ${difficultyLevel}`;
+      await transcribe(pdfName, false);
+      let transcriptions = readTranscriptionsFromFile();
+      userPrompt = `This is the video transcript: ${transcriptions[pdfName]} and this is the difficulty level: ${difficultyLevel}`;
     } else {
       // Default behavior for PDFs
       userPrompt = `PDF name: ${pdfName}, Difficulty: ${difficultyLevel}`;
@@ -307,29 +309,67 @@ app.post("/get-quiz-feedback", async (req, res) => {
 // });
 
 const audioFiles = {
-  1: "C:/Users/bilal/Downloads/New Recording 30.m4a",
-  2: "C:/Users/bilal/Downloads/09.09.24 Comparative Programming Languages.mp3",
+  1: "/Users/yash/Downloads/CSET 4350/audio1.mp3",
+  2: "/Users/yash/Downloads/CSET 4350/audio1.mp3",
   // we can modify the paths and more tomorrow. Note a 30 minute video took about 2-3 minutes to transcribe
 };
 
 // Route to handle transcription by ID
-app.get("/transcribe-audio/:id", async (req, res) => {
-  try {
-    // Convert audioId to integer to ensure compatibility with the keys in audioFiles
-    const audioId = parseInt(req.params.id, 10);
+const transcriptionsFile = "transcriptions.json";
 
-    // Validate the ID
+const readTranscriptionsFromFile = () => {
+  try {
+    if (!fs.existsSync(transcriptionsFile)) {
+      return {}; // return empty object if file doesn't exist
+    }
+    const data = fs.readFileSync(transcriptionsFile, "utf8");
+    return JSON.parse(data);
+  } catch (error) {
+    console.error("Error reading transcriptions file:", error);
+    return {};
+  }
+};
+
+const writeTranscriptionsToFile = async (transcriptions) => {
+  try {
+    await fs.writeFileSync(
+      transcriptionsFile,
+      JSON.stringify(transcriptions, null, 2)
+    );
+  } catch (error) {
+    console.error("Error writing transcriptions file:", error);
+  }
+};
+
+async function transcribe(audioId, query) {
+  try {
     if (!audioFiles[audioId]) {
-      return res
-        .status(404)
-        .json({ error: "Audio file not found for the given ID." });
+      if (query) {
+        return res
+          .status(404)
+          .json({ error: "Audio file not found for the given ID." });
+      }
+    }
+
+    // Load existing transcriptions
+    let transcriptions = readTranscriptionsFromFile();
+
+    // Check if transcription for this audioId exists already
+    if (transcriptions[audioId]) {
+      // If yes, return it directly
+      if (query) {
+        return res.status(200).json({
+          id: audioId,
+          transcription: transcriptions[audioId],
+          source: "cache", // optional field to indicate it's from cache
+        });
+      } else return transcriptions[audioId];
     }
 
     const audioFilePath = audioFiles[audioId];
-
     console.log("Processing file:", audioFilePath);
 
-    // Transcribe the audio file
+    // If not cached, call OpenAI Whisper API to transcribe
     const transcription = await openai.audio.transcriptions.create({
       file: fs.createReadStream(audioFilePath),
       model: "whisper-1",
@@ -337,17 +377,29 @@ app.get("/transcribe-audio/:id", async (req, res) => {
       language: "en", // Default language
     });
 
+    // Save the transcription text in our JSON file
+    transcriptions[audioId] = transcription.text;
+    await writeTranscriptionsToFile(transcriptions);
+
     // Return the transcription
-    return res.status(200).json({
-      id: audioId,
-      transcription: transcription.text,
-    });
+    if (query) {
+      return res.status(200).json({
+        id: audioId,
+        transcription: transcription.text,
+        source: "fresh", // optional field to indicate newly fetched
+      });
+    } else return transcription.text;
   } catch (error) {
     console.error("Error during transcription:", error);
     return res
       .status(500)
       .json({ error: "An error occurred during transcription." });
   }
+}
+
+app.get("/transcribe-audio/:id", async (req, res) => {
+  const audioId = parseInt(req.params.id, 10);
+  await transcribe(audioId, true);
 });
 
 // API Route to get all quizzes
